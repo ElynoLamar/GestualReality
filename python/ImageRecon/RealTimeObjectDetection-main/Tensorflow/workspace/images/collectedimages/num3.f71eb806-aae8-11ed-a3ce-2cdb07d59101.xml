@@ -1,0 +1,26 @@
+<annotation>
+	<folder>collectedimages</folder>
+	<filename>num3.f71eb806-aae8-11ed-a3ce-2cdb07d59101.jpg</filename>
+	<path>C:\Users\EX119032\3KTech\workspaces\Tutorials\ImageRecon\RealTimeObjectDetection-main\Tensorflow\workspace\images\collectedimages\num3.f71eb806-aae8-11ed-a3ce-2cdb07d59101.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>three</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>226</xmin>
+			<ymin>109</ymin>
+			<xmax>531</xmax>
+			<ymax>480</ymax>
+		</bndbox>
+	</object>
+</annotation>
