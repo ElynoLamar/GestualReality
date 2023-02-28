@@ -1,0 +1,344 @@
+Unity Editor version:    2022.2.7f1 (8331acaee5d3)
+Branch:                  2022.2/staging
+Build type:              Release
+Batch mode:              YES
+macOS version:           Version 13.2 (Build 22D49)
+Darwin version:          22.3.0
+Architecture:            arm64
+Running under Rosetta:   NO
+Available memory:        16384 MB
+Using pre-set license
+Pro License: YES
+
+COMMAND LINE ARGUMENTS:
+/Applications/Unity/Hub/Editor/2022.2.7f1/Unity.app/Contents/MacOS/Unity
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+/Users/miguelpinheiro/Documents/GitHub/GestualReality/unity/PSL
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+59511
+Successfully changed project path to: /Users/miguelpinheiro/Documents/GitHub/GestualReality/unity/PSL
+/Users/miguelpinheiro/Documents/GitHub/GestualReality/unity/PSL
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [8013955328] Host "[IP] 192.168.1.120 [Port] 0 [Flags] 2 [Guid] 1129764922 [EditorId] 1129764922 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro-85.home) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [8013955328] Host "[IP] 192.168.1.120 [Port] 0 [Flags] 2 [Guid] 1129764922 [EditorId] 1129764922 [Version] 1048832 [Id] OSXEditor(0,MacBook-Pro-85.home) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 9.63 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.2.7f1 (8331acaee5d3)
+[Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.2.7f1/Unity.app/Contents/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path /Users/miguelpinheiro/Documents/GitHub/GestualReality/unity/PSL/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+ preferred device: Apple M1 (high power)
+Metal devices available: 1
+0: Apple M1 (high power)
+Using device Apple M1 (high power)
+Initializing Metal device caps: Apple M1
+Initialize mono
+Mono path[0] = '/Applications/Unity/Hub/Editor/2022.2.7f1/Unity.app/Contents/Managed'
+Mono path[1] = '/Applications/Unity/Hub/Editor/2022.2.7f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
+Mono config path = '/Applications/Unity/Hub/Editor/2022.2.7f1/Unity.app/Contents/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56294
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: /Applications/Unity/Hub/Editor/2022.2.7f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
+Registered in 0.002228 seconds.
+- Loaded All Assemblies, in  0.265 seconds
+Native extension for OSXStandalone target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.169 seconds
+Domain Reload Profiling:
+	ReloadAssembly (169ms)
+		BeginReloadAssembly (84ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		LoadAllAssembliesAndSetupDomain (0ms)
+			LoadAssemblies (84ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (93ms)
+				TypeCache.Initialize (92ms)
+					TypeCache.ScanAssembly (91ms)
+				ResolveRequiredComponents (0ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (126ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (5ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (87ms)
+				ProcessInitializeOnLoadMethodAttributes (30ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /Users/miguelpinheiro/Documents/GitHub/GestualReality/unity/PSL/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /Users/miguelpinheiro/Documents/GitHub/GestualReality/unity/PSL/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.690 seconds
+Refreshing native plugins compatible for Editor in 0.94 ms, found 2 plugins.
+Native extension for OSXStandalone target not found
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+- Finished resetting the current domain, in  0.386 seconds
+Domain Reload Profiling:
+	ReloadAssembly (133ms)
+		BeginReloadAssembly (72ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (19ms)
+		LoadAllAssembliesAndSetupDomain (557ms)
+			LoadAssemblies (203ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (378ms)
+				TypeCache.Initialize (221ms)
+					TypeCache.ScanAssembly (217ms)
+				ResolveRequiredComponents (4ms)
+		FinalizeReload (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (0ms)
+			SetupLoadedEditorAssemblies (278ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (2ms)
+				SetLoadedEditorAssemblies (3ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (47ms)
+				ProcessInitializeOnLoadAttributes (213ms)
+				ProcessInitializeOnLoadMethodAttributes (12ms)
+				AfterProcessingInitializeOnLoad (1ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Launching external process: /Applications/Unity/Hub/Editor/2022.2.7f1/Unity.app/Contents/Tools/UnityShaderCompiler
+Launched and connected shader compiler UnityShaderCompiler after 0.05 seconds
+Refreshing native plugins compatible for Editor in 1.68 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3877 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 27 unused Assets / (51.3 KB). Loaded Objects now: 4344.
+Memory consumption went from 0.59 GB to 0.59 GB.
+Total: 2.824917 ms (FindLiveObjects: 0.168792 ms CreateObjectMapping: 0.050167 ms MarkObjects: 2.526166 ms  DeleteObjects: 0.078917 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: 3918e3fc78b5a79bad01e8451be0beb8 -> 
+  custom:framework-osx-AVFoundation: e770b220cccbd017edd2c1fefb359320 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 152747.033626 seconds.
+  path: Assets/XR
+  artifactKey: Guid(72329569c479cec43b45fa661b515791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/XR using Guid(72329569c479cec43b45fa661b515791) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcefd6ae56e88618068b8b81a372d709') in 0.001504 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000198 seconds.
+  path: Assets/HandAnimations/LGP -A-.anim
+  artifactKey: Guid(32c360c8539bd4e5c85030fb6ca2ca25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HandAnimations/LGP -A-.anim using Guid(32c360c8539bd4e5c85030fb6ca2ca25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7c569f9d6100be2f7908ca485bcf2d3') in 0.008417 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000374 seconds.
+  path: Assets/HandAnimations
+  artifactKey: Guid(3e53ed1a50ab64520a7211615d286f87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HandAnimations using Guid(3e53ed1a50ab64520a7211615d286f87) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec20a329eab11699093c51208d0d99ab') in 0.000250 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 31.558439 seconds.
+  path: Assets/hands/LeftHand 1.controller
+  artifactKey: Guid(73901f14ea7b05e43ab971f3496e2505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hands/LeftHand 1.controller using Guid(73901f14ea7b05e43ab971f3496e2505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8eb60a3232663d6f83f670d5c1ed96a') in 0.017627 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 31.033255 seconds.
+  path: Assets/HandAnimations/Idle.anim
+  artifactKey: Guid(35504525647924468a9a2e30a5698eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HandAnimations/Idle.anim using Guid(35504525647924468a9a2e30a5698eb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9eae14fb93574db135b189efcb00b221') in 0.001192 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 8.934442 seconds.
+  path: Assets/HandAnimations/LGP -D-.anim
+  artifactKey: Guid(18f16cd8e3c5a49faad5a60d48d25372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HandAnimations/LGP -D-.anim using Guid(18f16cd8e3c5a49faad5a60d48d25372) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae92a9f91e40d9a3549d65ae492bd002') in 0.002494 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 138.446065 seconds.
+  path: Assets/HandAnimations/LGP -F-.anim
+  artifactKey: Guid(3eb63c9decc5d47b4ad0ec8862cf5118) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HandAnimations/LGP -F-.anim using Guid(3eb63c9decc5d47b4ad0ec8862cf5118) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7058dff820a5f7280bc70b0b97f5f5df') in 0.008893 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 12.327349 seconds.
+  path: Assets/hands/LeftHand 2.controller
+  artifactKey: Guid(a4fd5a081d5b44b41901d318c90fed3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hands/LeftHand 2.controller using Guid(a4fd5a081d5b44b41901d318c90fed3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ff2b773daafc5f48560d64d5486d2ed') in 0.009602 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 18
+========================================================================
+Received Import Request.
+  Time since last request: 11.792836 seconds.
+  path: Assets/hands/RightHand.controller
+  artifactKey: Guid(a4fd5a081d5b44b41901d318c90fed3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hands/RightHand.controller using Guid(a4fd5a081d5b44b41901d318c90fed3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ff3cd031924d2092c18b75009a85b0b') in 0.011083 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 18
+========================================================================
+Received Import Request.
+  Time since last request: 196.492715 seconds.
+  path: Assets/hands/LeftHand 1.controller
+  artifactKey: Guid(73901f14ea7b05e43ab971f3496e2505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hands/LeftHand 1.controller using Guid(73901f14ea7b05e43ab971f3496e2505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d73be248c35c7888ba57f2bbaaa7afa') in 0.024008 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 18
+========================================================================
+Received Import Request.
+  Time since last request: 0.820433 seconds.
+  path: Assets/hands/LeftHand 2.controller
+  artifactKey: Guid(022395a8d6b1b43deaa4d2a0e1d46bcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hands/LeftHand 2.controller using Guid(022395a8d6b1b43deaa4d2a0e1d46bcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a20111ab6494575fb1fcceb6f98094b') in 0.007943 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 18
+========================================================================
+Received Import Request.
+  Time since last request: 44.036609 seconds.
+  path: Assets/HandAnimations/RightHand.controller
+  artifactKey: Guid(dd91221499f7c4d03bf488cf1bbbd4d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HandAnimations/RightHand.controller using Guid(dd91221499f7c4d03bf488cf1bbbd4d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff6ff41d150c218465a5cb1719e2caa3') in 0.017092 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 274.124351 seconds.
+  path: Assets/HandAnimations/LGP -G-.anim
+  artifactKey: Guid(f265f06e33793417da0d9e0cf72dbd63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HandAnimations/LGP -G-.anim using Guid(f265f06e33793417da0d9e0cf72dbd63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c59e4fb87516d1de9ab96b059b0f78e') in 0.009024 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 9.282509 seconds.
+  path: Assets/XRI
+  artifactKey: Guid(b9b051e85c5b0f14eaaadb2c089ba0d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/XRI using Guid(b9b051e85c5b0f14eaaadb2c089ba0d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe9addf0c912ca1547c52ea143fd59da') in 0.005275 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 6.063468 seconds.
+  path: Assets/HA
+  artifactKey: Guid(dcc7a377fc3fd45978ef5fb5764eefdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HA using Guid(dcc7a377fc3fd45978ef5fb5764eefdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3da627f9945885d5c5669ef008612910') in 0.002393 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 15.072864 seconds.
+  path: Assets/HA/Rh.controller
+  artifactKey: Guid(45f85f5457a5d492dab23181e64fc6ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HA/Rh.controller using Guid(45f85f5457a5d492dab23181e64fc6ef) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c645782198c9d65005964e543e6b4c88') in 0.001594 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 39.901631 seconds.
+  path: Assets/HA/PSL -A-.anim
+  artifactKey: Guid(0056789ff41344a42a4b095f57fe5d6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HA/PSL -A-.anim using Guid(0056789ff41344a42a4b095f57fe5d6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5130d6738dcfee4a4048b2333661e21e') in 0.007356 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 317.096566 seconds.
+  path: Assets/hands/LeftHand.controller
+  artifactKey: Guid(b9f9773024c974048a437daa7c861902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/hands/LeftHand.controller using Guid(b9f9773024c974048a437daa7c861902) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d2d91a14d5d2952e401a71517ccf741') in 0.038508 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 147.786227 seconds.
+  path: Assets/HandAnimations/RightHand_PSL.controller
+  artifactKey: Guid(dd91221499f7c4d03bf488cf1bbbd4d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HandAnimations/RightHand_PSL.controller using Guid(dd91221499f7c4d03bf488cf1bbbd4d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '874c5f9df3ccf5788529940d4e4d1486') in 0.015769 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 21
+========================================================================
+Received Import Request.
+  Time since last request: 22.128561 seconds.
+  path: Assets/HandAnimations/LGP -C-.anim
+  artifactKey: Guid(ce77059a0e56f401f902a9c1a30d7cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HandAnimations/LGP -C-.anim using Guid(ce77059a0e56f401f902a9c1a30d7cd3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '781b76f512bf0959fddab5a3835cbc01') in 0.004366 seconds 
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
