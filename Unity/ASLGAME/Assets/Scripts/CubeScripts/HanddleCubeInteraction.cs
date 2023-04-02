@@ -6,23 +6,23 @@ public class HanddleCubeInteraction : MonoBehaviour
 {
 
     //public GameObject Cube;
-    public float inyteractableDistance = 1f;
+    public float inyteractableDistance = 3f;
 
     private bool objectInteractable = false;
-    public Animator doorAnimation;
+    private Animator doorAnimation;
 
 
     private void Start()
     {
 
         //objectToMakeVisible.SetActive(false);
-        doorAnimation = GetComponent<Animator>();
+        doorAnimation = GameObject.FindWithTag("BedroomDoor").GetComponent<Animator>();
 
     }
 
     private void Update()
     {
-        Debug.Log(objectInteractable);
+        //Debug.Log(objectInteractable);
         float distanceToPlayer = Vector3.Distance(transform.position,
             Camera.main.transform.position);
         
@@ -31,10 +31,7 @@ public class HanddleCubeInteraction : MonoBehaviour
             //objectToMakeVisible.SetActive(true);
 
             objectInteractable = true;
-            if (Input.GetKey(KeyCode.O))
-            {
-                doorAnimation.SetBool("DoorOpen", true);
-            }
+
             
         }
         else if (objectInteractable && distanceToPlayer > inyteractableDistance)
@@ -43,7 +40,11 @@ public class HanddleCubeInteraction : MonoBehaviour
 
             objectInteractable = false;
         }
+        if (Input.GetKey(KeyCode.O) && objectInteractable)
+        {
+            doorAnimation.SetBool("DoorOpen", true);
+        }
 
-        
+
     }
 }
