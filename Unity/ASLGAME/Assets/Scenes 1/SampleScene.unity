@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028305, g: 0.22571313, b: 0.3069213, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1056,6 +1056,8 @@ MonoBehaviour:
   bounceAmplitude: 0.015
   rotationSpeed: 90
   handObject: {fileID: 1338816140}
+  startHeight: 0
+  timeOffset: 0
 --- !u!65 &34317139
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1680,6 +1682,8 @@ MonoBehaviour:
   bounceSpeed: 2
   bounceAmplitude: 0.005
   rotationSpeed: 90
+  startHeight: 0
+  timeOffset: 0
 --- !u!1 &63404085
 GameObject:
   m_ObjectHideFlags: 0
@@ -2446,6 +2450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 679adf0a4c5c0420b9e732c7ef9aff3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animator: {fileID: 0}
 --- !u!114 &93150617
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2461,6 +2466,8 @@ MonoBehaviour:
   bounceSpeed: 2
   bounceAmplitude: 0.005
   rotationSpeed: 90
+  startHeight: 0
+  timeOffset: 0
 --- !u!1 &94725225
 GameObject:
   m_ObjectHideFlags: 0
@@ -4629,6 +4636,8 @@ MonoBehaviour:
   bounceSpeed: 2
   bounceAmplitude: 0.005
   rotationSpeed: 90
+  startHeight: 0
+  timeOffset: 0
 --- !u!4 &189233724
 Transform:
   m_ObjectHideFlags: 0
@@ -4657,6 +4666,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eebafecacfc364141a4c26f444c230ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animator: {fileID: 0}
 --- !u!1 &199421142
 GameObject:
   m_ObjectHideFlags: 0
@@ -4817,7 +4827,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 199716130}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.816, y: 1, z: -3.038}
+  m_LocalPosition: {x: -5.19, y: 1, z: -1.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6134,6 +6144,8 @@ MonoBehaviour:
   bounceSpeed: 2
   bounceAmplitude: 0.005
   rotationSpeed: 90
+  startHeight: 0
+  timeOffset: 0
 --- !u!4 &262378337
 Transform:
   m_ObjectHideFlags: 0
@@ -6162,6 +6174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c56ddfcda113489d9b4224284ae03db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animator: {fileID: 0}
 --- !u!1 &266844011
 GameObject:
   m_ObjectHideFlags: 0
@@ -8337,6 +8350,8 @@ MonoBehaviour:
   bounceAmplitude: 0.015
   rotationSpeed: 90
   handObject: {fileID: 262378335}
+  startHeight: 0
+  timeOffset: 0
 --- !u!65 &377015236
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10036,6 +10051,8 @@ MonoBehaviour:
   bounceAmplitude: 0.015
   rotationSpeed: 90
   handObject: {fileID: 1995095371}
+  startHeight: 0
+  timeOffset: 0
 --- !u!1 &468510724
 GameObject:
   m_ObjectHideFlags: 0
@@ -13155,6 +13172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 679adf0a4c5c0420b9e732c7ef9aff3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animator: {fileID: 0}
 --- !u!114 &614007032
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13170,6 +13188,8 @@ MonoBehaviour:
   bounceSpeed: 2
   bounceAmplitude: 0.005
   rotationSpeed: 90
+  startHeight: 0
+  timeOffset: 0
 --- !u!4 &614007033
 Transform:
   m_ObjectHideFlags: 0
@@ -14579,6 +14599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f45b17df9e9b54177be7154fdb09a957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animator: {fileID: 0}
 --- !u!114 &666593044
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14594,6 +14615,8 @@ MonoBehaviour:
   bounceSpeed: 2
   bounceAmplitude: 0.005
   rotationSpeed: 90
+  startHeight: 0
+  timeOffset: 0
 --- !u!1 &668435920
 GameObject:
   m_ObjectHideFlags: 0
@@ -16021,6 +16044,8 @@ MonoBehaviour:
   bounceAmplitude: 0.015
   rotationSpeed: 90
   handObject: {fileID: 780528484}
+  startHeight: 0
+  timeOffset: 0
 --- !u!65 &728382718
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16847,6 +16872,8 @@ MonoBehaviour:
   bounceSpeed: 2
   bounceAmplitude: 0.005
   rotationSpeed: 90
+  startHeight: 0
+  timeOffset: 0
 --- !u!1 &755934926
 GameObject:
   m_ObjectHideFlags: 0
@@ -17329,6 +17356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f19f0e5bb64340949b15ba2a19e7027, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animator: {fileID: 0}
 --- !u!114 &780528487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17344,6 +17372,8 @@ MonoBehaviour:
   bounceSpeed: 2
   bounceAmplitude: 0.005
   rotationSpeed: 90
+  startHeight: 0
+  timeOffset: 0
 --- !u!1 &782701072
 GameObject:
   m_ObjectHideFlags: 0
@@ -17583,6 +17613,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 788672976}
+  - component: {fileID: 788672977}
   m_Layer: 0
   m_Name: Bedroom
   m_TagString: Untagged
@@ -17606,6 +17637,26 @@ Transform:
   m_Father: {fileID: 575814992490602907}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 36.127, z: 0}
+--- !u!95 &788672977
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 788672975}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 80c64521b91d64b1ea78d12ee721b63d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &789236874
 GameObject:
   m_ObjectHideFlags: 0
@@ -17799,6 +17850,8 @@ MonoBehaviour:
   bounceAmplitude: 0.015
   rotationSpeed: 90
   handObject: {fileID: 1615632001}
+  startHeight: 0
+  timeOffset: 0
 --- !u!65 &800747612
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -17928,6 +17981,8 @@ MonoBehaviour:
   bounceAmplitude: 0.015
   rotationSpeed: 90
   handObject: {fileID: 1895929913}
+  startHeight: 0
+  timeOffset: 0
 --- !u!65 &804060767
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18649,6 +18704,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 679adf0a4c5c0420b9e732c7ef9aff3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animator: {fileID: 0}
 --- !u!114 &845758192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18664,6 +18720,8 @@ MonoBehaviour:
   bounceSpeed: 2
   bounceAmplitude: 0.005
   rotationSpeed: 90
+  startHeight: 0
+  timeOffset: 0
 --- !u!1001 &846552524
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18719,6 +18777,10 @@ PrefabInstance:
     - target: {fileID: 1009690699488973660, guid: 5d0ba74ab60decc488de61cdbcb9576a, type: 3}
       propertyPath: m_Name
       value: OVRCameraRig
+      objectReference: {fileID: 0}
+    - target: {fileID: 1009690699488973660, guid: 5d0ba74ab60decc488de61cdbcb9576a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2710034821333660328, guid: 5d0ba74ab60decc488de61cdbcb9576a, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -20704,7 +20766,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
@@ -26886,6 +26948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 679adf0a4c5c0420b9e732c7ef9aff3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animator: {fileID: 0}
 --- !u!114 &1241253400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26901,6 +26964,8 @@ MonoBehaviour:
   bounceSpeed: 2
   bounceAmplitude: 0.005
   rotationSpeed: 90
+  startHeight: 0
+  timeOffset: 0
 --- !u!1 &1241530194
 GameObject:
   m_ObjectHideFlags: 0
@@ -29439,6 +29504,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c56ddfcda113489d9b4224284ae03db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animator: {fileID: 0}
 --- !u!114 &1338816143
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29454,6 +29520,8 @@ MonoBehaviour:
   bounceSpeed: 2
   bounceAmplitude: 0.005
   rotationSpeed: 90
+  startHeight: 0
+  timeOffset: 0
 --- !u!1 &1343263372
 GameObject:
   m_ObjectHideFlags: 0
@@ -30617,6 +30685,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 679adf0a4c5c0420b9e732c7ef9aff3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animator: {fileID: 0}
 --- !u!114 &1410105140
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30632,6 +30701,8 @@ MonoBehaviour:
   bounceSpeed: 2
   bounceAmplitude: 0.005
   rotationSpeed: 90
+  startHeight: 0
+  timeOffset: 0
 --- !u!1 &1410548402
 GameObject:
   m_ObjectHideFlags: 0
@@ -33691,6 +33762,8 @@ MonoBehaviour:
   bounceAmplitude: 0.015
   rotationSpeed: 90
   handObject: {fileID: 1786378167}
+  startHeight: 0
+  timeOffset: 0
 --- !u!65 &1521296270
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -35666,6 +35739,8 @@ MonoBehaviour:
   bounceSpeed: 2
   bounceAmplitude: 0.005
   rotationSpeed: 90
+  startHeight: 0
+  timeOffset: 0
 --- !u!4 &1615632003
 Transform:
   m_ObjectHideFlags: 0
@@ -35694,6 +35769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f45b17df9e9b54177be7154fdb09a957, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animator: {fileID: 0}
 --- !u!1 &1615923266
 GameObject:
   m_ObjectHideFlags: 0
@@ -36051,6 +36127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 679adf0a4c5c0420b9e732c7ef9aff3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animator: {fileID: 0}
 --- !u!114 &1633611018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36066,6 +36143,8 @@ MonoBehaviour:
   bounceSpeed: 2
   bounceAmplitude: 0.005
   rotationSpeed: 90
+  startHeight: 0
+  timeOffset: 0
 --- !u!1 &1634933009
 GameObject:
   m_ObjectHideFlags: 0
@@ -37606,6 +37685,8 @@ MonoBehaviour:
   bounceAmplitude: 0.015
   rotationSpeed: 90
   handObject: {fileID: 189233722}
+  startHeight: 0
+  timeOffset: 0
 --- !u!65 &1734256042
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37761,6 +37842,8 @@ MonoBehaviour:
   bounceSpeed: 2
   bounceAmplitude: 0.005
   rotationSpeed: 90
+  startHeight: 0
+  timeOffset: 0
 --- !u!1 &1742343044
 GameObject:
   m_ObjectHideFlags: 0
@@ -39089,6 +39172,8 @@ MonoBehaviour:
   bounceSpeed: 2
   bounceAmplitude: 0.005
   rotationSpeed: 90
+  startHeight: 0
+  timeOffset: 0
 --- !u!4 &1772918005
 Transform:
   m_ObjectHideFlags: 0
@@ -39345,6 +39430,8 @@ MonoBehaviour:
   bounceSpeed: 2
   bounceAmplitude: 0.005
   rotationSpeed: 90
+  startHeight: 0
+  timeOffset: 0
 --- !u!4 &1786378169
 Transform:
   m_ObjectHideFlags: 0
@@ -39373,6 +39460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f19f0e5bb64340949b15ba2a19e7027, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animator: {fileID: 0}
 --- !u!1 &1787295215
 GameObject:
   m_ObjectHideFlags: 0
@@ -39899,6 +39987,7 @@ GameObject:
   - component: {fileID: 1831485245}
   - component: {fileID: 1831485247}
   - component: {fileID: 1831485246}
+  - component: {fileID: 1831485248}
   m_Layer: 0
   m_Name: SignCube E
   m_TagString: Untagged
@@ -39943,6 +40032,8 @@ MonoBehaviour:
   bounceAmplitude: 0.015
   rotationSpeed: 90
   handObject: {fileID: 666593041}
+  startHeight: 0
+  timeOffset: 0
 --- !u!65 &1831485247
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -39964,6 +40055,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.15, y: 0.15, z: 0.15}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1831485248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1831485244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1237936aece33421e87e2130761c1b87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inyteractableDistance: 1
+  doorAnimation: {fileID: 788672977}
 --- !u!1 &1835167877
 GameObject:
   m_ObjectHideFlags: 0
@@ -40689,6 +40794,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 679adf0a4c5c0420b9e732c7ef9aff3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animator: {fileID: 0}
 --- !u!114 &1893005167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40704,6 +40810,8 @@ MonoBehaviour:
   bounceSpeed: 2
   bounceAmplitude: 0.005
   rotationSpeed: 90
+  startHeight: 0
+  timeOffset: 0
 --- !u!1 &1893711627
 GameObject:
   m_ObjectHideFlags: 0
@@ -40804,6 +40912,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eebafecacfc364141a4c26f444c230ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animator: {fileID: 0}
 --- !u!114 &1895929916
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40819,6 +40928,8 @@ MonoBehaviour:
   bounceSpeed: 2
   bounceAmplitude: 0.005
   rotationSpeed: 90
+  startHeight: 0
+  timeOffset: 0
 --- !u!1 &1899354554
 GameObject:
   m_ObjectHideFlags: 0
@@ -41273,6 +41384,8 @@ MonoBehaviour:
   bounceAmplitude: 0.015
   rotationSpeed: 90
   handObject: {fileID: 1241253397}
+  startHeight: 0
+  timeOffset: 0
 --- !u!65 &1917073760
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43221,6 +43334,8 @@ MonoBehaviour:
   bounceSpeed: 2
   bounceAmplitude: 0.005
   rotationSpeed: 90
+  startHeight: 0
+  timeOffset: 0
 --- !u!114 &1995095374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43233,6 +43348,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 679adf0a4c5c0420b9e732c7ef9aff3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _animator: {fileID: 0}
 --- !u!1 &2004783179
 GameObject:
   m_ObjectHideFlags: 0
