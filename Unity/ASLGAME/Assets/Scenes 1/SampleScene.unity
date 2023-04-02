@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4822,6 +4822,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 963194228}
+  - {fileID: 846552525}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -18663,6 +18664,80 @@ MonoBehaviour:
   bounceSpeed: 2
   bounceAmplitude: 0.005
   rotationSpeed: 90
+--- !u!1001 &846552524
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 199716136}
+    m_Modifications:
+    - target: {fileID: 1009690699488677756, guid: 5d0ba74ab60decc488de61cdbcb9576a, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1009690699488677756, guid: 5d0ba74ab60decc488de61cdbcb9576a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1009690699488677756, guid: 5d0ba74ab60decc488de61cdbcb9576a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.603
+      objectReference: {fileID: 0}
+    - target: {fileID: 1009690699488677756, guid: 5d0ba74ab60decc488de61cdbcb9576a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1009690699488677756, guid: 5d0ba74ab60decc488de61cdbcb9576a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7048969
+      objectReference: {fileID: 0}
+    - target: {fileID: 1009690699488677756, guid: 5d0ba74ab60decc488de61cdbcb9576a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1009690699488677756, guid: 5d0ba74ab60decc488de61cdbcb9576a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.70930976
+      objectReference: {fileID: 0}
+    - target: {fileID: 1009690699488677756, guid: 5d0ba74ab60decc488de61cdbcb9576a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1009690699488677756, guid: 5d0ba74ab60decc488de61cdbcb9576a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1009690699488677756, guid: 5d0ba74ab60decc488de61cdbcb9576a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90.358
+      objectReference: {fileID: 0}
+    - target: {fileID: 1009690699488677756, guid: 5d0ba74ab60decc488de61cdbcb9576a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1009690699488973660, guid: 5d0ba74ab60decc488de61cdbcb9576a, type: 3}
+      propertyPath: m_Name
+      value: OVRCameraRig
+      objectReference: {fileID: 0}
+    - target: {fileID: 2710034821333660328, guid: 5d0ba74ab60decc488de61cdbcb9576a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 72add149fab026843bdb569b18839f4f, type: 2}
+    - target: {fileID: 4617273003139947880, guid: 5d0ba74ab60decc488de61cdbcb9576a, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 72add149fab026843bdb569b18839f4f, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5d0ba74ab60decc488de61cdbcb9576a, type: 3}
+--- !u!4 &846552525 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1009690699488677756, guid: 5d0ba74ab60decc488de61cdbcb9576a, type: 3}
+  m_PrefabInstance: {fileID: 846552524}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &848553261
 GameObject:
   m_ObjectHideFlags: 0
@@ -20629,7 +20704,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
