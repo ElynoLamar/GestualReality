@@ -1,6 +1,6 @@
 # Python virtual environment
 .venv
-
+.venv/
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -22,3 +22,8 @@ build/
 # Other
 *.pyc
 .DS_Store
+
+yolov5-master/
+prebuild-models/
+prebuild-models.rar
+ImageRecon/
