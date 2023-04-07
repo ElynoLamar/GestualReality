@@ -1,0 +1,8 @@
+
+# Ignore compiled files in virtual environment
+*.pyc
+*.pyo
+__pycache__/
+
+# Ignore installed packages in virtual environment
+Lib/
