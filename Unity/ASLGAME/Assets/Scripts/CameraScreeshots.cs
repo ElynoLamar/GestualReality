@@ -34,7 +34,7 @@ public class CameraScreeshots : MonoBehaviour
     {
         Debug.Log("ATTEMPTING SCREENSHOT" + letter);
         string timestamp = System.DateTime.Now.ToString("yyyyMMddHHmmss");
-        string path = "dataset/screenshots/" + letter + '_'+ timestamp + ".png";
+        string path = "dataset/screenshots/" + letter + '_' + timestamp + ".png";
         StartCoroutine(SaveScreenshot(path, () =>
         {
             string imagePath = path;
@@ -42,78 +42,38 @@ public class CameraScreeshots : MonoBehaviour
             StartCoroutine(PostRequest(imagePath));
         }));
     }
-   
+
     private IEnumerator SaveScreenshot(string path, System.Action onComplete)
     {
-        // Old Way
-        //    // Wait for the end of the frame to ensure that the previous frame's graphics are fully rendered
-        //    yield return new WaitForEndOfFrame(); // n mexer 
-
-        //    // Create a new RenderTexture with the same dimensions as the screen
-        //    mainCamera.enabled = false;
-        //    // Enable the camera to take a screenshot with 
-        //    camera.enabled = true;
-        //    ScreenCapture.CaptureScreenshot(path); //player camera only???
-        //    //int width = Screen.width;
-        //    //int height = Screen.height;
-        //    //Texture2D tex = new Texture2D(width, height, TextureFormat.RGB24, false);
-
-        //    //tex.ReadPixels(new Rect(0, 0, width, height), 0, 0);
-        //    //tex.Apply();
-        //    //byte[] bytes = tex.EncodeToPNG();
-        //    //// Do whatever with screenshot
-        //    //File.WriteAllBytes(path, bytes);
-
-        //    mainCamera.enabled = true;
-        //    camera.enabled = false;
-
-        //    Debug.Log("Screenshot saved to " + path);
-        //// Wait for 1 second
-        //yield return new WaitForSeconds(1f); // n mexer
-
-        //    onComplete.Invoke(); // n mexer
-
-
-        // New Try
-        
         // Wait for the end of the frame to ensure that the previous frame's graphics are fully rendered
         yield return new WaitForEndOfFrame();
 
         // Create a new RenderTexture with the same dimensions as the screen
         mainCamera.enabled = false;
         orthoCamera.enabled = true;
-        //
-        int pixelWidth = orthoCamera.pixelWidth * 2;
-        int pixelHeight = orthoCamera.pixelHeight * 2;
-
-        //RenderTexture renderTexture = new RenderTexture(pixelWidth, pixelHeight, 24);
-        //camera.targetTexture = renderTexture;
+        orthoCamera.enabled = true; // Enable the new camera
         RenderTexture renderTexture = new RenderTexture(Screen.width, Screen.height, 24);
-        camera.targetTexture = renderTexture;
+        orthoCamera.targetTexture = renderTexture; // Use the new camera's RenderTexture
 
-        // Render the camera's view into the RenderTexture
-        camera.Render();
+        // Render the new camera's view into the RenderTexture
+        orthoCamera.Render();
 
         // Set the RenderTexture as the active RenderTexture
         RenderTexture.active = renderTexture;
 
         // Create a new Texture2D and read the RenderTexture's contents into it
-        Texture2D screenshot = new Texture2D(Screen.width, Screen.height, TextureFormat.RGB24, false);
-        screenshot.ReadPixels(new Rect(0, 0, Screen.width, Screen.height), 0, 0);
+        Texture2D screenshot = new Texture2D(renderTexture.width, renderTexture.height, TextureFormat.RGB24, false);
+        screenshot.ReadPixels(new Rect(0, 0, renderTexture.width, renderTexture.height), 0, 0);
         screenshot.Apply();
-
-        ////
-        //Texture2D screenshot = new Texture2D(pixelWidth, pixelHeight, TextureFormat.RGB24, false);
-        //screenshot.ReadPixels(new Rect(0, 0, pixelWidth, pixelHeight), 0, 0);
-        //screenshot.Apply();
 
         // Encode the Texture2D as a PNG and save it to the specified path
         byte[] bytes = screenshot.EncodeToPNG();
         File.WriteAllBytes(path, bytes);
 
         // Clean up
-        camera.targetTexture = null;
+        orthoCamera.targetTexture = null;
         RenderTexture.active = null;
+        orthoCamera.enabled = false;
         orthoCamera.enabled = false;
         mainCamera.enabled = true;
 

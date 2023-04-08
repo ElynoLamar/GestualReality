@@ -23,7 +23,7 @@ build/
 *.pyc
 .DS_Store
 
-yolov5-master/
+
 prebuild-models/
 prebuild-models.rar
 ImageRecon/

@@ -1,0 +1,11 @@
+train: ../VowelsDS/images/train/  # train images (relative to 'path') 128 images
+val: ../VowelsDS/images/val/  # val images (relative to 'path') 128 images
+
+
+# Classes
+names:
+  0: A
+  1: E
+  2: I
+  3: O
+  4: U
