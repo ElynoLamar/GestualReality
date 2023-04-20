@@ -9,10 +9,11 @@ using UnityEngine.XR;
 
 public class CameraScreeshots : MonoBehaviour
 {
-    public char targetLetter;
+    public string targetLetter;
     public string endpointUrl = "localhost:5000/";
     public new Camera camera;
     public Camera mainCamera;
+    public GameObject targetBox;
 
     //
     public Camera orthoCamera;
@@ -30,11 +31,11 @@ public class CameraScreeshots : MonoBehaviour
         }
     }
 
-    void takeScreenshot(char letter)
+    void takeScreenshot(string letter)
     {
         Debug.Log("ATTEMPTING SCREENSHOT" + letter);
         string timestamp = System.DateTime.Now.ToString("yyyyMMddHHmmss");
-        string path = "dataset/screenshots/" + letter + '_' + timestamp + ".png";
+        string path = "dataset/screenshots/v4/" + letter + '/' + letter + '_' + timestamp + ".png";
         StartCoroutine(SaveScreenshot(path, () =>
         {
             string imagePath = path;
@@ -52,7 +53,7 @@ public class CameraScreeshots : MonoBehaviour
         mainCamera.enabled = false;
         orthoCamera.enabled = true;
         orthoCamera.enabled = true; // Enable the new camera
-        RenderTexture renderTexture = new RenderTexture(Screen.width, Screen.height, 24);
+        RenderTexture renderTexture = new RenderTexture(512, 512, 24);
         orthoCamera.targetTexture = renderTexture; // Use the new camera's RenderTexture
 
         // Render the new camera's view into the RenderTexture
@@ -97,16 +98,44 @@ public class CameraScreeshots : MonoBehaviour
         // Create a UnityWebRequest object with the form data and send it
         UnityWebRequest request = UnityWebRequest.Post(endpointUrl, form);
         yield return request.SendWebRequest();
-
+        Debug.Log(request.downloadHandler.text);
+        if (request.downloadHandler.text == targetLetter)
+        {
+            Debug.Log("entramos no fi");
+            targetBox.GetComponent<BedInteract>().setCompleted();
+        }
         if (request.result == UnityWebRequest.Result.Success)
         {
             Debug.Log("Request successful!");
             Debug.Log(request.downloadHandler.text);
+          
         }
         else
         {
             Debug.Log("Error: " + request.error);
         }
+
+       /** string json = "{\"name\":\"John Smith\",\"age\":30,\"email\":\"john.smith@example.com\"}";
+        byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(json);
+
+        // create the UnityWebRequest object
+        UnityWebRequest request = UnityWebRequest.Post(url, "POST");
+        request.uploadHandler = new UploadHandlerRaw(bodyRaw);
+        request.downloadHandler = new DownloadHandlerBuffer();
+        request.SetRequestHeader("Content-Type", "application/json");
+
+        // send the request and wait for a response
+        yield return request.SendWebRequest();
+
+        if (request.result != UnityWebRequest.Result.Success)
+        {
+            Debug.LogError(request.error);
+        }
+        else
+        {
+            Debug.Log("Request sent successfully!");
+            Debug.Log(request.downloadHandler.text);
+        }*/
     }
 
 
@@ -132,4 +161,11 @@ public class CameraScreeshots : MonoBehaviour
     //        }
     //    }
     //}
+
+
+
+
+    // collider com a mão, e tirar screenshots a cada x segs
+    // comparar a repsosta  c/ targetLetter, se for igual particulas fixes se nao, particulas q falhaste
+
 }

@@ -14,8 +14,6 @@ public class BedInteract : MonoBehaviour//, MakeInteractable
     private bool objectIsVisible = false;
     public bool isComplete = false;
 
-
-
     private void Start()
     {
        
@@ -48,6 +46,23 @@ public class BedInteract : MonoBehaviour//, MakeInteractable
             isComplete = true;
             
         }
+    }
+
+    public void setCompleted()
+    {
+        Debug.Log("entramos no set");
+
+        if (objectIsVisible)
+        {
+            Debug.Log("no if 2");
+
+            interactiveCube.SetActive(false);
+            completeE.SetActive(true);
+            isComplete = true;
+            Debug.Log("done");
+
+        }
+
     }
    
     

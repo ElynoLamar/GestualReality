@@ -10,6 +10,7 @@ TagManager:
   - CubeE
   - AppearE
   - Card
+  - Hand
   layers:
   - Default
   - TransparentFX
