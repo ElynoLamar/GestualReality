@@ -1,1 +1,1 @@
-Sample
+train.py --img 640 --batch 128 --epochs 300 --data ./data/vowels_ASL.yaml --weights yolov5s.pt --cache
