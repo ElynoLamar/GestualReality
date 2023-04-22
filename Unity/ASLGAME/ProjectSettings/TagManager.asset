@@ -11,6 +11,8 @@ TagManager:
   - AppearE
   - Card
   - Hand
+  - Matched
+  - LivingRoom
   layers:
   - Default
   - TransparentFX
