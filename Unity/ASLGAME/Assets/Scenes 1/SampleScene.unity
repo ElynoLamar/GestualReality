@@ -17717,6 +17717,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db7dc93a5dd88cb499f5c2b046d1c8f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CameraScreeshots: {fileID: 0}
 --- !u!1 &645100376
 GameObject:
   m_ObjectHideFlags: 0
@@ -55240,8 +55241,8 @@ LineRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.04247284
-        value: 0.41182068
+        time: 0.038612366
+        value: 0.020913392
         inSlope: 0
         outSlope: 0
         tangentMode: 0

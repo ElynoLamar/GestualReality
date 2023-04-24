@@ -17,22 +17,19 @@ public class CameraScreeshots : MonoBehaviour
 
     //
     public Camera orthoCamera;
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            takeScreenshot(targetLetter);
+           // takeScreenshot();
         }
     }
 
-    void takeScreenshot(string letter)
+    public void takeScreenshot()
     {
+        string letter = targetLetter;
         Debug.Log("ATTEMPTING SCREENSHOT" + letter);
         string timestamp = System.DateTime.Now.ToString("yyyyMMddHHmmss");
         string path = "dataset/screenshots/v4/" + letter + '/' + letter + '_' + timestamp + ".png";

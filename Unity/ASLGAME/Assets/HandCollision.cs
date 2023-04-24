@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class HandCollision : MonoBehaviour
 {
+    public CameraScreeshots CameraScreeshots;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +23,9 @@ public class HandCollision : MonoBehaviour
         {
             Debug.Log("Collided hands ");
             Renderer renderer = GetComponent<Renderer>();
-             renderer.material.color = new Color(0,0,0,0.5f);
+            renderer.material.color = new Color(0,0,0,0.5f);
+            //InvokeRepeating("screenshot", 2f, 4f);
+
         }
     }
 
@@ -34,7 +37,13 @@ public class HandCollision : MonoBehaviour
             Debug.Log("Collided hands ");
             Renderer renderer = GetComponent<Renderer>();
             renderer.material.color = new Color(0, 1, 0, 0.5f);
+            CancelInvoke("screenshot");
 
         }
+    }
+
+    void screenshot()
+    {
+        CameraScreeshots.takeScreenshot();
     }
 }
