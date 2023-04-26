@@ -7,10 +7,10 @@ public class SofaInteractable : MonoBehaviour//, MakeInteractable
 
 
     public GameObject objectToMakeVisible;
-    public GameObject completeO;
     public GameObject completeA;
-    public GameObject interactiveCubeO;
+    public GameObject completeE;
     public GameObject interactiveCubeA;
+    public GameObject interactiveCubeE;
     public float visibleDistance = 5f;
 
 
@@ -25,8 +25,8 @@ public class SofaInteractable : MonoBehaviour//, MakeInteractable
     {
        
         objectToMakeVisible.SetActive(false);
-        completeO.SetActive(false);
         completeA.SetActive(false);
+        completeE.SetActive(false);
     }
 
     private void Update()
@@ -46,19 +46,19 @@ public class SofaInteractable : MonoBehaviour//, MakeInteractable
             
             objectIsVisible = false;
         }
-        // For the letter O
-        if (Input.GetKey(KeyCode.K) && objectIsVisible) // check if the "K" key is pressed AND the object is visible
-        {
-            interactiveCubeO.SetActive(false);
-            completeO.SetActive(true);
-            OisComplete = true;
-
-        }
         // For the letter A
-        if (Input.GetKey(KeyCode.L) && objectIsVisible) // check if the "K" key is pressed AND the object is visible
+        if (Input.GetKey(KeyCode.K) && objectIsVisible) // check if the "K" key is pressed AND the object is visible
         {
             interactiveCubeA.SetActive(false);
             completeA.SetActive(true);
+            OisComplete = true;
+
+        }
+        // For the letter E
+        if (Input.GetKey(KeyCode.L) && objectIsVisible) // check if the "K" key is pressed AND the object is visible
+        {
+            interactiveCubeE.SetActive(false);
+            completeE.SetActive(true);
             AisComplete = true;
 
         }
