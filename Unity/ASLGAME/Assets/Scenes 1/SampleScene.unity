@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028305, g: 0.22571313, b: 0.3069213, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -197,7 +197,7 @@ GameObject:
   - component: {fileID: 3126505}
   - component: {fileID: 3126507}
   - component: {fileID: 3126506}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: E
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1071,7 +1071,7 @@ GameObject:
   - component: {fileID: 26029284}
   - component: {fileID: 26029283}
   - component: {fileID: 26029286}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CardE
   m_TagString: Card
   m_Icon: {fileID: 0}
@@ -7424,7 +7424,7 @@ GameObject:
   - component: {fileID: 231481904}
   - component: {fileID: 231481906}
   - component: {fileID: 231481905}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: E
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7559,7 +7559,7 @@ GameObject:
   - component: {fileID: 231748525}
   - component: {fileID: 231748527}
   - component: {fileID: 231748526}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: I
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12788,7 +12788,7 @@ GameObject:
   - component: {fileID: 422052928}
   - component: {fileID: 422052927}
   - component: {fileID: 422052930}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CardI
   m_TagString: Card
   m_Icon: {fileID: 0}
@@ -14072,7 +14072,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 457407275}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14382,7 +14382,7 @@ GameObject:
   - component: {fileID: 474532016}
   - component: {fileID: 474532015}
   - component: {fileID: 474532014}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: ' Letter Canvas (U)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18963,7 +18963,7 @@ GameObject:
   - component: {fileID: 619333521}
   - component: {fileID: 619333520}
   - component: {fileID: 619333523}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CardU
   m_TagString: Card
   m_Icon: {fileID: 0}
@@ -22693,7 +22693,7 @@ GameObject:
   - component: {fileID: 727787438}
   - component: {fileID: 727787437}
   - component: {fileID: 727787440}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CardI
   m_TagString: Card
   m_Icon: {fileID: 0}
@@ -24746,7 +24746,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 784267280}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27517,7 +27517,7 @@ GameObject:
   - component: {fileID: 869256369}
   - component: {fileID: 869256368}
   - component: {fileID: 869256371}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CardE
   m_TagString: Card
   m_Icon: {fileID: 0}
@@ -29926,7 +29926,7 @@ GameObject:
   - component: {fileID: 960318361}
   - component: {fileID: 960318360}
   - component: {fileID: 960318363}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CardU
   m_TagString: Card
   m_Icon: {fileID: 0}
@@ -34463,7 +34463,7 @@ GameObject:
   - component: {fileID: 1088373334}
   - component: {fileID: 1088373333}
   - component: {fileID: 1088373332}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: ' Letter Canvas (E)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37540,7 +37540,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1173304747}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38160,7 +38160,7 @@ GameObject:
   - component: {fileID: 1189181423}
   - component: {fileID: 1189181422}
   - component: {fileID: 1189181421}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: ' Letter Canvas (I)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39438,7 +39438,7 @@ GameObject:
   - component: {fileID: 1241530198}
   - component: {fileID: 1241530197}
   - component: {fileID: 1241530196}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: ' Letter Canvas (U)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39569,7 +39569,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1243256596}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41092,7 +41092,7 @@ GameObject:
   - component: {fileID: 1283029693}
   - component: {fileID: 1283029692}
   - component: {fileID: 1283029691}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: ' Letter Canvas (I)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41937,7 +41937,7 @@ GameObject:
   - component: {fileID: 1303066861}
   - component: {fileID: 1303066863}
   - component: {fileID: 1303066862}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: U
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46544,7 +46544,7 @@ GameObject:
   - component: {fileID: 1444175580}
   - component: {fileID: 1444175582}
   - component: {fileID: 1444175581}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: I
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -47871,7 +47871,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1490932268}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48851,7 +48851,7 @@ GameObject:
   - component: {fileID: 1517814253}
   - component: {fileID: 1517814252}
   - component: {fileID: 1517814251}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: ' Letter Canvas (E)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54682,7 +54682,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1720073578}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -59237,7 +59237,7 @@ GameObject:
   - component: {fileID: 1857797395}
   - component: {fileID: 1857797397}
   - component: {fileID: 1857797396}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: U
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61837,7 +61837,14 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  cubeLayer:
+    serializedVersion: 2
+    m_Bits: 256
+  cardLayer:
+    serializedVersion: 2
+    m_Bits: 128
   playerObject: {fileID: 199716130}
+  cardFlipper: {fileID: 0}
 --- !u!1 &1955396400
 GameObject:
   m_ObjectHideFlags: 0

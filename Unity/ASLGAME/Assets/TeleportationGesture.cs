@@ -2,6 +2,7 @@ using UnityEngine;
 using OculusSampleFramework;
 using System;
 using System.Collections;
+using UnityEditor.PackageManager;
 // hand = GetComponentInChildren<OVRHand>();
 public class TeleportationGesture : MonoBehaviour
 {
@@ -9,7 +10,10 @@ public class TeleportationGesture : MonoBehaviour
     public OVRHand hand;
     public OVRSkeleton skeleton;
     public LayerMask groundLayer;
+    public LayerMask cubeLayer;
+    public LayerMask cardLayer;
     public GameObject playerObject;
+    public Card cardFlipper; 
     private bool pinching = false;
     void Start()
     {
@@ -59,6 +63,22 @@ public class TeleportationGesture : MonoBehaviour
                 pinching = false;
                 lineRenderer.enabled = false;
                 return true;
+            }
+            else if(Physics.Raycast(indexFingerTipPosition, indexFingerTipNormal, out hit, Mathf.Infinity, cardLayer))
+            {
+                Debug.Log(hit);
+                pinching = false;
+                lineRenderer.enabled = false;
+                GameObject hitObject = hit.collider.gameObject;
+
+                // Do something with the hit object
+                hitObject.GetComponent<Card>().FlipCard();
+                return false;
+            } 
+            else if (Physics.Raycast(indexFingerTipPosition, indexFingerTipNormal, out hit, Mathf.Infinity, cubeLayer))
+            {
+
+
             }
             return false;
 

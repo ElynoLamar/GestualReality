@@ -29,6 +29,26 @@ public class Card : MonoBehaviour
 
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log(collision);
+        if (false){
+
+            bool CubeShow = gameManager.getShowCube();
+            //Debug.Log(CubeShow);
+            if (!CubeShow)
+            {
+                if (!isFlipped && gameManager.canFlip)
+                {
+                    FlipCard();
+                    gameManager.AddCardToSelected(this);
+                }
+            }
+
+        } 
+
+    }
+
     public void FlipCard()
     {
 
