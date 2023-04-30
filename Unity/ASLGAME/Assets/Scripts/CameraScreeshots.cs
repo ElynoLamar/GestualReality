@@ -23,7 +23,7 @@ public class CameraScreeshots : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-           // takeScreenshot();
+           takeScreenshot();
         }
     }
 

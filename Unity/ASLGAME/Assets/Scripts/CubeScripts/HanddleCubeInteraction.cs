@@ -40,11 +40,14 @@ public class HanddleCubeInteraction : MonoBehaviour
 
             objectInteractable = false;
         }
-        if (Input.GetKey(KeyCode.O) && objectInteractable)
+        if (objectInteractable)
         {
             doorAnimation.SetBool("DoorOpen", true);
         }
 
 
+    }
+    public void grabCube() {
+        objectInteractable = true;
     }
 }

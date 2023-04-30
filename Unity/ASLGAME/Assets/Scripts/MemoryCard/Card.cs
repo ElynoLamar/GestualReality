@@ -16,6 +16,8 @@ public class Card : MonoBehaviour
 
     private void OnMouseDown()
     {
+       Debug.Log("test");
+
         bool CubeShow = gameManager.getShowCube();
         //Debug.Log(CubeShow);
         if (!CubeShow)
@@ -54,6 +56,19 @@ public class Card : MonoBehaviour
 
         isFlipped = true;
         transform.Rotate(0, 180, 0);
+    }
+
+    public void setFlipCard()
+    {
+        bool CubeShow = gameManager.getShowCube();
+        if (!CubeShow)
+        {
+            if (!isFlipped && gameManager.canFlip)
+            {
+                FlipCard();
+                gameManager.AddCardToSelected(this);
+            }
+        }
     }
 
     public void UnflipCard()

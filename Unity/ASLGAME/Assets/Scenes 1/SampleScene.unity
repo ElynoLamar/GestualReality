@@ -3148,7 +3148,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 86817158}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hands:b_r_pinky2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7155,7 +7155,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 215268039}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hands:b_r_hand_ignore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8582,7 +8582,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 256149763}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hands:b_r_thumb1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11813,7 +11813,7 @@ GameObject:
   - component: {fileID: 377524139}
   - component: {fileID: 377524138}
   - component: {fileID: 377524137}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: ' Letter Canvas (3)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12400,7 +12400,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 400992876}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hands:b_r_ring1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12571,7 +12571,7 @@ GameObject:
   m_Component:
   - component: {fileID: 408835313}
   - component: {fileID: 408835314}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: RightHand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20111,7 +20111,7 @@ GameObject:
   - component: {fileID: 654769170}
   - component: {fileID: 654769172}
   - component: {fileID: 654769171}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: E
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20488,7 +20488,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 658239162}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hands:b_r_pinky1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20692,7 +20692,7 @@ GameObject:
   - component: {fileID: 666593042}
   - component: {fileID: 666593044}
   - component: {fileID: 666593043}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Hand rotation
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -20881,7 +20881,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 669954472}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hands:b_r_thumb_ignore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -21096,7 +21096,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 679650146}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hands:b_r_index_ignore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -23183,7 +23183,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 739384426}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hands:b_r_middle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25432,7 +25432,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 807097735}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hands:b_r_pinky3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -26394,7 +26394,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 837848627}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hands:b_r_index1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -27959,7 +27959,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 883169763}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hands:b_r_middle_ignore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29037,7 +29037,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 918171147}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hands:hands_geom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32155,7 +32155,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1014875654}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hands:b_r_middle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32388,7 +32388,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1019291753}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hands:b_r_ring2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -32422,7 +32422,7 @@ GameObject:
   - component: {fileID: 1020404526}
   - component: {fileID: 1020404528}
   - component: {fileID: 1020404527}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: E
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -34659,7 +34659,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1101098846}
   - component: {fileID: 1101098847}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hands:Rhand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38449,7 +38449,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1204163911}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hands:b_r_grip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40195,7 +40195,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1257466193}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hands:b_r_ring3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41398,7 +41398,7 @@ GameObject:
   - component: {fileID: 1289965802}
   - component: {fileID: 1289965804}
   - component: {fileID: 1289965803}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: E
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -42731,7 +42731,7 @@ GameObject:
   - component: {fileID: 1330304395}
   - component: {fileID: 1330304394}
   - component: {fileID: 1330304393}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: ' Letter Canvas'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45384,7 +45384,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1420066403}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hands:b_r_middle3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50545,7 +50545,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1572761244}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hands:b_r_hand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -50679,7 +50679,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1576362693}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hands:b_r_ring_ignore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51104,7 +51104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1593426143}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hands:b_r_pinky0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -51438,7 +51438,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1604489086}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hands:b_r_index3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52614,7 +52614,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1634933010}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hands:b_r_pinky_ignore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -52680,7 +52680,7 @@ GameObject:
   - component: {fileID: 1636162755}
   - component: {fileID: 1636162754}
   - component: {fileID: 1636162753}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: ' Letter Canvas (1)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53382,7 +53382,7 @@ GameObject:
   - component: {fileID: 1662785224}
   - component: {fileID: 1662785223}
   - component: {fileID: 1662785222}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: ' Letter Canvas (2)'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53611,7 +53611,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1668231605}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hands:b_r_index2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55938,7 +55938,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1747180779}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hands:b_r_thumb2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56461,7 +56461,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1753934337}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hands:r_hand_world
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56745,7 +56745,7 @@ GameObject:
   - component: {fileID: 1757538344}
   - component: {fileID: 1757538343}
   - component: {fileID: 1757538342}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -58547,7 +58547,7 @@ GameObject:
   - component: {fileID: 1831485247}
   - component: {fileID: 1831485246}
   - component: {fileID: 1831485248}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: SignCube E
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -60240,7 +60240,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1901910444}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: hands:b_r_thumb3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61525,7 +61525,7 @@ GameObject:
   - component: {fileID: 1936365763}
   - component: {fileID: 1936365765}
   - component: {fileID: 1936365764}
-  m_Layer: 5
+  m_Layer: 8
   m_Name: E
   m_TagString: Untagged
   m_Icon: {fileID: 0}
