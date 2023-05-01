@@ -39,6 +39,8 @@ public class CubeRotation : MonoBehaviour
 
     public void CubeR()
     {
+
+        // NOT USED ANYMORE
         if (Input.GetKey(KeyCode.P))
         {
             Debug.Log("cube not rotating");

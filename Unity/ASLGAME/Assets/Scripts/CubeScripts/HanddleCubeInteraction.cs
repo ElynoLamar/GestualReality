@@ -10,44 +10,55 @@ public class HanddleCubeInteraction : MonoBehaviour
 
     private bool objectInteractable = false;
     private Animator doorAnimation;
+    public string letter = "E";
+    public Letterbool handSignActivate;
+    public GameObject handObject;
 
 
     private void Start()
     {
-
         //objectToMakeVisible.SetActive(false);
         doorAnimation = GameObject.FindWithTag("BedroomDoor").GetComponent<Animator>();
+        doorAnimation.SetBool("DoorOpen", false);
+        objectInteractable = false;
+
 
     }
 
     private void Update()
     {
-        //Debug.Log(objectInteractable);
-        float distanceToPlayer = Vector3.Distance(transform.position,
-            Camera.main.transform.position);
-        
-        if (!objectInteractable && distanceToPlayer <= inyteractableDistance)
-        {
-            //objectToMakeVisible.SetActive(true);
-
-            objectInteractable = true;
-
-            
-        }
-        else if (objectInteractable && distanceToPlayer > inyteractableDistance)
-        {
-            //objectToMakeVisible.SetActive(false);
-
-            objectInteractable = false;
-        }
         if (objectInteractable)
         {
-            doorAnimation.SetBool("DoorOpen", true);
-        }
+            if (letter == "E")
+            {
+                handSignActivate.activateLetter();
+                Invoke("OpenFirstDoor", 2f);
 
+            }
+            //manter dentro deste if, mas no final dos ifs nested
+            showHandPose();
+        }
+    }
+
+    private void showHandPose()
+    {
+        handObject.SetActive(true);
+        Invoke("hideHandPose", 10f);
+    }
+    private void hideHandPose()
+    {
+        handObject.SetActive(false);
+        objectInteractable = false;
+    }
+    private void OpenFirstDoor()
+    {
+        doorAnimation.SetBool("DoorOpen", true);
 
     }
-    public void grabCube() {
+    public void grabCube()
+    {
+        Debug.Log("GrabCube");
         objectInteractable = true;
+
     }
 }

@@ -58,7 +58,7 @@ public class TeleportationGesture : MonoBehaviour
                     if (pinching)
                     {
                         GameObject hitObject = hit.collider.gameObject;
-                        hitObject.GetComponent<Card>().setFlipCard();
+                        ActivateCard(hitObject);
                         pinching = false;
                         lineRenderer.enabled = false;
                     }
@@ -80,9 +80,7 @@ public class TeleportationGesture : MonoBehaviour
                     if (pinching)
                     {
                         GameObject hitObject = hit.collider.gameObject;
-                        hitObject.GetComponent<HanddleCubeInteraction>().grabCube();
-                        Debug.Log("TESTEEEEE");
-
+                        ActivateCube(hitObject);
                         pinching = false;
                         lineRenderer.enabled = false;
                     }
@@ -120,6 +118,28 @@ public class TeleportationGesture : MonoBehaviour
         }
 
         return false;
+    }
+
+    /// <summary>
+    /// grabs the cube of the game object hit.
+    /// </summary>
+    /// <param name="hitObject">The game object hit.</param>
+    private void ActivateCube(GameObject hitObject)
+    {
+        Debug.Log("activateCube");
+        Debug.Log(hitObject);
+
+        hitObject.GetComponent<HanddleCubeInteraction>().grabCube();
+    }
+
+    /// <summary>
+    /// Flips the card of the game object hit.
+    /// </summary>
+    /// <param name="hitObject">The game object hit.</param>
+    private void ActivateCard(GameObject hitObject)
+    {
+        Debug.Log("ActivateCard");
+        hitObject.GetComponent<Card>().setFlipCard();
     }
 
     /// <summary>

@@ -24,4 +24,4 @@ def upload_file():
     file.save(filepath)
     output = my_function(filepath)  # call the function directly
     print(output)
-    return output
+    return output.decode('utf-8').strip()

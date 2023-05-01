@@ -1,1 +1,15 @@
 train.py --img 640 --batch 128 --epochs 300 --data ./data/vowels_ASL.yaml --weights yolov5s.pt --cache
+
+
+.\.venv\Scripts\activate
+
+python -m flask --app .venv\server.py run
+
+nvidia-smi
+
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
+
+pip install torch torchvision --upgrade -f https://download.pytorch.org/whl/cu111/torch_stable.html
+
+pip uninstall torch torchvision
+

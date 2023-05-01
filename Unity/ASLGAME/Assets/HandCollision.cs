@@ -5,27 +5,23 @@ using UnityEngine;
 public class HandCollision : MonoBehaviour
 {
     public CameraScreeshots CameraScreeshots;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    private bool takeScreenshot = false;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
-    void OnTriggerStay(Collider other)
+
+
+    void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Hand")
         {
             Debug.Log("Collided hands ");
             Renderer renderer = GetComponent<Renderer>();
-            renderer.material.color = new Color(0,0,0,0.5f);
-            //InvokeRepeating("screenshot", 2f, 4f);
-
+            renderer.material.color = new Color(0, 0, 0, 0.5f);
+            if (!takeScreenshot)
+            {
+                takeScreenshot = true;
+                InvokeRepeating("screenshot", 2f, 6f);
+            }
         }
     }
 
@@ -37,13 +33,20 @@ public class HandCollision : MonoBehaviour
             Debug.Log("Collided hands ");
             Renderer renderer = GetComponent<Renderer>();
             renderer.material.color = new Color(0, 1, 0, 0.5f);
-            CancelInvoke("screenshot");
+            if (takeScreenshot)
+            {
+                CancelInvoke("screenshot");
 
+                takeScreenshot = false;
+            }
         }
     }
 
     void screenshot()
     {
-        CameraScreeshots.takeScreenshot();
+        if (takeScreenshot)
+        {
+            CameraScreeshots.takeScreenshot();
+        }
     }
 }
