@@ -1,3 +1,4 @@
+
 from flask import Flask, request, jsonify, make_response
 import os
 import sys
@@ -13,14 +14,17 @@ sys.path.append(os.path.abspath(os.path.join(
     os.path.dirname(__file__), '..', 'ultralytics')))
 
 # Import the my_function from test.py module
+
+
 from yolov8.test import my_function
 
 @app.route('/', methods=['POST'])
 def upload_file():
     file = request.files['image']
     filename = file.filename
-    filepath = os.path.join(os.path.dirname(__file__), UPLOAD_FOLDER, filename)
-    print(os.path.abspath(filepath))
+    filename = os.path.basename(filename)
+    filepath = os.path.abspath(os.path.join(
+        os.path.dirname(__file__), UPLOAD_FOLDER, filename))
     file.save(filepath)
     output = my_function(filepath)  # call the function directly
     print(output)

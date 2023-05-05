@@ -14,13 +14,12 @@ public class HandCollision : MonoBehaviour
     {
         if (other.tag == "Hand")
         {
-            Debug.Log("Collided hands ");
             Renderer renderer = GetComponent<Renderer>();
             renderer.material.color = new Color(0, 0, 0, 0.5f);
             if (!takeScreenshot)
             {
                 takeScreenshot = true;
-                InvokeRepeating("screenshot", 2f, 6f);
+                InvokeRepeating("screenshot", 2f, 15f);
             }
         }
     }
@@ -30,13 +29,11 @@ public class HandCollision : MonoBehaviour
     {
         if (other.tag == "Hand")
         {
-            Debug.Log("Collided hands ");
             Renderer renderer = GetComponent<Renderer>();
             renderer.material.color = new Color(0, 1, 0, 0.5f);
             if (takeScreenshot)
             {
                 CancelInvoke("screenshot");
-
                 takeScreenshot = false;
             }
         }

@@ -30,13 +30,11 @@ public class CameraScreeshots : MonoBehaviour
     public void takeScreenshot()
     {
         string letter = targetLetter;
-        Debug.Log("ATTEMPTING SCREENSHOT" + letter);
         string timestamp = System.DateTime.Now.ToString("yyyyMMddHHmmss");
         string path = "dataset/screenshots/v5/" + letter + '/' + letter + '_' + timestamp + ".png";
         StartCoroutine(SaveScreenshot(path, () =>
         {
             string imagePath = path;
-            Debug.Log("SUCCESSFUL SS" + letter);
             StartCoroutine(PostRequest(imagePath));
         }));
     }
@@ -74,9 +72,6 @@ public class CameraScreeshots : MonoBehaviour
         orthoCamera.enabled = false;
         orthoCamera.enabled = false;
         mainCamera.enabled = true;
-
-        Debug.Log("Screenshot saved to " + path);
-
         // Wait for 1 second
         yield return new WaitForSeconds(1f);
 
@@ -98,18 +93,7 @@ public class CameraScreeshots : MonoBehaviour
         Debug.Log(request.downloadHandler.text);
         if (request.downloadHandler.text == targetLetter)
         {
-            Debug.Log("entramos no fi");
             targetBox.GetComponent<BedInteract>().setCompleted();
-        }
-        if (request.result == UnityWebRequest.Result.Success)
-        {
-            Debug.Log("Request successful!");
-            Debug.Log(request.downloadHandler.text);
-          
-        }
-        else
-        {
-            Debug.Log("Error: " + request.error);
         }
 
        /** string json = "{\"name\":\"John Smith\",\"age\":30,\"email\":\"john.smith@example.com\"}";

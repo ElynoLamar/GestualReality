@@ -39,27 +39,22 @@ public class BedInteract : MonoBehaviour//, MakeInteractable
             
             objectIsVisible = false;
         }
-        if (Input.GetKey(KeyCode.K) && objectIsVisible) // check if the "K" key is pressed AND the object is visible
-        {
-            interactiveCube.SetActive(false);
-            completeE.SetActive(true);
-            isComplete = true;
+        //if (Input.GetKey(KeyCode.K) && objectIsVisible) // check if the "K" key is pressed AND the object is visible
+        //{
+        //    interactiveCube.SetActive(false);
+        //    completeE.SetActive(true);
+        //    isComplete = true;
             
-        }
+        //}
     }
 
     public void setCompleted()
     {
-        Debug.Log("entramos no set");
-
         if (objectIsVisible)
         {
-            Debug.Log("no if 2");
-
             interactiveCube.SetActive(false);
             completeE.SetActive(true);
             isComplete = true;
-            Debug.Log("done");
 
         }
 

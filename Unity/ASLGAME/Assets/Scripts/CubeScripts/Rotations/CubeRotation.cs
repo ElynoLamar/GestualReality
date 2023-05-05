@@ -37,29 +37,27 @@ public class CubeRotation : MonoBehaviour
         transform.localRotation = Quaternion.Euler(rotation.x, rotation.y, rotation.z);
     }
 
-    public void CubeR()
-    {
+    //public void CubeR()
+    //{
 
-        // NOT USED ANYMORE
-        if (Input.GetKey(KeyCode.P))
-        {
-            Debug.Log("cube not rotating");
-
-            handObject.SetActive(true);
+    //    // NOT USED ANYMORE
+    //    if (Input.GetKey(KeyCode.P))
+    //    {
+    //        handObject.SetActive(true);
 
 
-        }
-        else
-        {
-            Cube();
-            handObject.SetActive(false);
+    //    }
+    //    else
+    //    {
+    //        Cube();
+    //        handObject.SetActive(false);
 
-        }
-    }
+    //    }
+    //}
 
-    void Update()
-    {
-        CubeR();
+    //void Update()
+    //{
+    //    CubeR();
 
-    }
+    //}
 }

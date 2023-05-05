@@ -57,7 +57,6 @@ public class HanddleCubeInteraction : MonoBehaviour
     }
     public void grabCube()
     {
-        Debug.Log("GrabCube");
         objectInteractable = true;
 
     }
