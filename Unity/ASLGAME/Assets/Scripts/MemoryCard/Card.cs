@@ -16,7 +16,7 @@ public class Card : MonoBehaviour
 
     private void OnMouseDown()
     {
-       Debug.Log("test");
+      // Debug.Log("test");
 
         bool CubeShow = gameManager.getShowCube();
         //Debug.Log(CubeShow);
@@ -33,7 +33,7 @@ public class Card : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log(collision);
+        //Debug.Log(collision);
         if (false){
 
             bool CubeShow = gameManager.getShowCube();

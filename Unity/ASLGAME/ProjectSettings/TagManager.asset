@@ -13,6 +13,9 @@ TagManager:
   - Hand
   - Matched
   - LivingRoom
+  - BathDoor
+  - TV
+  - Exit
   layers:
   - Default
   - TransparentFX

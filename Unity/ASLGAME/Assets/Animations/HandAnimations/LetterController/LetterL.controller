@@ -10,8 +10,8 @@ AnimatorStateMachine:
   m_Name: Base Layer
   m_ChildStates:
   - serializedVersion: 1
-    m_State: {fileID: 5005172363246575674}
-    m_Position: {x: 190, y: 100, z: 0}
+    m_State: {fileID: 8037141613612001373}
+    m_Position: {x: 220, y: 80, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -21,7 +21,7 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 210, y: -10, z: 0}
   m_ExitPosition: {x: 410, y: -50, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 5005172363246575674}
+  m_DefaultState: {fileID: 8037141613612001373}
 --- !u!91 &9100000
 AnimatorController:
   m_ObjectHideFlags: 0
@@ -74,14 +74,14 @@ AnimatorController:
     m_IKPass: 0
     m_SyncedLayerAffectsTiming: 0
     m_Controller: {fileID: 9100000}
---- !u!1102 &5005172363246575674
+--- !u!1102 &8037141613612001373
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ASL -S-
+  m_Name: PSL -L-
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions: []
@@ -94,7 +94,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 393021d4b09e94874bb9cac58e8f8d8a, type: 2}
+  m_Motion: {fileID: 7400000, guid: dbb2272346996480ca8c4e490b556c18, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 

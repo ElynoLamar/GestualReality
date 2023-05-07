@@ -16,9 +16,11 @@ public class SofaInteractable : MonoBehaviour//, MakeInteractable
 
 
     private bool objectIsVisible = false;
-    public bool OisComplete = false;
+    public bool EisComplete = false;
     public bool AisComplete = false;
     public bool isComplete = false;
+
+    private Animator doorAnimation;
 
 
     private void Start()
@@ -27,6 +29,8 @@ public class SofaInteractable : MonoBehaviour//, MakeInteractable
         objectToMakeVisible.SetActive(false);
         completeA.SetActive(false);
         completeE.SetActive(false);
+
+        doorAnimation = GameObject.FindWithTag("LivingRoom").GetComponent<Animator>();
     }
 
     private void Update()
@@ -51,7 +55,7 @@ public class SofaInteractable : MonoBehaviour//, MakeInteractable
         {
             interactiveCubeA.SetActive(false);
             completeA.SetActive(true);
-            OisComplete = true;
+            EisComplete = true;
 
         }
         // For the letter E
@@ -62,9 +66,12 @@ public class SofaInteractable : MonoBehaviour//, MakeInteractable
             AisComplete = true;
 
         }
-        if (OisComplete && AisComplete)
+        if (EisComplete && AisComplete)
         {
             isComplete = true;
+            doorAnimation.SetBool("openDoor", false);
+
         }
     }
+
 }

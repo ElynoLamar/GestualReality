@@ -32,8 +32,11 @@ public class CubeInteraction : MonoBehaviour
             {
                 LivingRoomUI.SetActive(false);
                 LVdoorAnimation.SetBool("openDoor", true);
+
+                //
+                GameObject.FindWithTag("Exit").SetActive(true);
                 //openDoor = true;
-               // Debug.Log(openDoor);
+                // Debug.Log(openDoor);
 
             }
         }

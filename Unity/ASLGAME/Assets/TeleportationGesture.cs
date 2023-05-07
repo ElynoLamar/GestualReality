@@ -157,6 +157,26 @@ public class TeleportationGesture : MonoBehaviour
         hitObject.GetComponent<Card>().setFlipCard();
     }
 
+    //New
+    // Grab Key To Open Bathroom door
+    private void ActivateBathroom(GameObject hitObject)
+    {
+        hitObject.GetComponent<BathroomKey>().grabKey();
+    }
+
+    // Grab U To Open Bathroom door
+    private void ActivateLivingroom(GameObject hitObject)
+    {
+        hitObject.GetComponent<LivingroomDoor>().grabU();
+    }
+    // Grab Controller To Activate TV 
+    private void ActivateTV(GameObject hitObject)
+    {
+        hitObject.GetComponent<GrabTV>().grabTV();
+    }
+
+
+
     /// <summary>
     /// Teleports the player to the hit point.
     /// </summary>

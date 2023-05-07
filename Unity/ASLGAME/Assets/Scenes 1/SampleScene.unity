@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028305, g: 0.22571313, b: 0.3069213, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -800,7 +800,7 @@ Animator:
   m_GameObject: {fileID: 17490707}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 617f4e4fd82604d7285c6dc16fc1ea4d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6f3383904fa194f75bfcb8dd976f6e9d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3003,7 +3003,7 @@ MonoBehaviour:
   interactiveCubeA: {fileID: 2067410211}
   interactiveCubeE: {fileID: 0}
   visibleDistance: 5
-  OisComplete: 0
+  EisComplete: 0
   AisComplete: 0
   isComplete: 0
 --- !u!1 &83707412
@@ -6842,8 +6842,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 199716130}
-  m_LocalRotation: {x: 0, y: 0.7271141, z: 0, w: 0.68651664}
-  m_LocalPosition: {x: 2.99, y: 0.6, z: -2.55}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: -2.45, y: 1.47, z: -1.31}
   m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6851,7 +6851,7 @@ Transform:
   - {fileID: 846552525}
   m_Father: {fileID: 0}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 93.29, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!1 &201273805
 GameObject:
   m_ObjectHideFlags: 0
@@ -6960,7 +6960,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 203536824}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44e97a2c3f6d248ea8719d46d2572b10, type: 3}
   m_Name: 
@@ -9241,7 +9241,7 @@ Animator:
   m_GameObject: {fileID: 267816247}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 617f4e4fd82604d7285c6dc16fc1ea4d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 44756c46efaee49f18e13847af8b45d4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -12943,12 +12943,12 @@ GameObject:
   - component: {fileID: 424507793}
   - component: {fileID: 424507794}
   m_Layer: 0
-  m_Name: LivingRoomDoorUI
-  m_TagString: Untagged
+  m_Name: TVUI
+  m_TagString: TV
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &424507793
 Transform:
   m_ObjectHideFlags: 0
@@ -18720,11 +18720,11 @@ GameObject:
   - component: {fileID: 610730366}
   m_Layer: 0
   m_Name: Exit UI
-  m_TagString: Untagged
+  m_TagString: Exit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &610730365
 Transform:
   m_ObjectHideFlags: 0
@@ -25366,6 +25366,7 @@ GameObject:
   - component: {fileID: 804060765}
   - component: {fileID: 804060767}
   - component: {fileID: 804060766}
+  - component: {fileID: 804060768}
   m_Layer: 0
   m_Name: SignCube U
   m_TagString: Untagged
@@ -25431,6 +25432,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.15, y: 0.15, z: 0.15}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &804060768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 804060764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 993d8a8e2565d4d0384b8e1d747f2856, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inyteractableDistance: 3
 --- !u!1 &807097734
 GameObject:
   m_ObjectHideFlags: 0
@@ -32547,7 +32561,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 981894687}
   m_LocalRotation: {x: 0.2459623, y: 0.945037, z: -0.031994287, w: 0.21303521}
-  m_LocalPosition: {x: -0.026297215, y: 0.041471086, z: -0.020563869}
+  m_LocalPosition: {x: -0.026297215, y: 0.027109, z: -0.020563869}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -34118,7 +34132,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1022993080
 Transform:
   m_ObjectHideFlags: 0
@@ -34283,7 +34297,7 @@ Animator:
   m_GameObject: {fileID: 1026305931}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8f6d6472b944841f98276e8b168f4b06, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3dbb64d2b0d394bf489f1e852a82adb2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -41319,7 +41333,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1248515579}
   m_LocalRotation: {x: 0.2459623, y: 0.945037, z: -0.031994287, w: 0.21303521}
-  m_LocalPosition: {x: -0.026297215, y: 0.041471086, z: -0.020563869}
+  m_LocalPosition: {x: -0.02629722, y: 0.041471086, z: -0.02056387}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -45156,12 +45170,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToMakeVisible: {fileID: 1984122583}
-  completeA: {fileID: 986687293}
-  completeE: {fileID: 1869465857}
+  completeA: {fileID: 1138357253}
+  completeE: {fileID: 1634848066}
   interactiveCubeA: {fileID: 1207848479}
   interactiveCubeE: {fileID: 265753882}
   visibleDistance: 5
-  OisComplete: 0
+  EisComplete: 0
   AisComplete: 0
   isComplete: 0
 --- !u!65 &1360366893
@@ -46307,13 +46321,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1408894057}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.08052834, y: 2.4392629, z: -6.463378}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4449127116368308164}
   - {fileID: 829655998032630363}
-  m_Father: {fileID: 1754266167}
+  m_Father: {fileID: 6108927827984667002}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1408894060
@@ -52397,9 +52411,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1588813764}
+  - component: {fileID: 1588813765}
   m_Layer: 0
   m_Name: DoorBathRoom
-  m_TagString: Untagged
+  m_TagString: BathDoor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52411,7 +52426,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1588813763}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.9168, y: -0.083614945, z: -1.202}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -52420,6 +52435,26 @@ Transform:
   m_Father: {fileID: 575814992490602907}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1588813765
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588813763}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1d14ca000e49c486db2270030d2825e1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1590682700
 GameObject:
   m_ObjectHideFlags: 0
@@ -55980,7 +56015,7 @@ Animator:
   m_GameObject: {fileID: 1712537837}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 617f4e4fd82604d7285c6dc16fc1ea4d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2ae8354d40a6540cf99a5345dec6704a, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -58037,7 +58072,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 726000280}
-  - {fileID: 1408894058}
   - {fileID: 1017559302}
   - {fileID: 224916845}
   - {fileID: 1159698043}
@@ -60630,7 +60664,7 @@ Animator:
   m_GameObject: {fileID: 1850258617}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 617f4e4fd82604d7285c6dc16fc1ea4d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6f3383904fa194f75bfcb8dd976f6e9d, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -64656,7 +64690,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1984122583}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44e97a2c3f6d248ea8719d46d2572b10, type: 3}
   m_Name: 
@@ -69362,7 +69396,7 @@ GameObject:
   - component: {fileID: 2146186283}
   - component: {fileID: 2146186282}
   m_Layer: 0
-  m_Name: toilet complete
+  m_Name: toilet puzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69403,7 +69437,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: d44308f8357e74ad29a723f8b7e3c1ce, type: 2}
+  - {fileID: 2100000, guid: 47ccc556e60c1af4ca71ee3df78fdbec, type: 2}
   - {fileID: 2100000, guid: 51bf1348bdc57254d926f116634b754b, type: 2}
   - {fileID: 2100000, guid: 4d574ad9835d65c4c875dc7d48975cd1, type: 2}
   m_StaticBatchInfo:
@@ -76404,6 +76438,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1911508313}
+  - {fileID: 1408894058}
   - {fileID: 1754266167}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -81427,6 +81462,7 @@ GameObject:
   - component: {fileID: 9147378476159987737}
   - component: {fileID: 9147378476160156728}
   - component: {fileID: 9147378476160156729}
+  - component: {fileID: 9147378476160156730}
   m_Layer: 0
   m_Name: key_silver
   m_TagString: Untagged
@@ -81470,6 +81506,19 @@ MonoBehaviour:
   bounceSpeed: 8
   bounceAmplitude: 0.05
   rotationSpeed: 90
+--- !u!114 &9147378476160156730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9147378476160156727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 173e184b156da4cf38d00768811e8d70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inyteractableDistance: 3
 --- !u!1 &9147378476160184297
 GameObject:
   m_ObjectHideFlags: 0
