@@ -79,4 +79,24 @@ public class ToiletInteract : MonoBehaviour
             isComplete = true;
         }
     }
+    public void setCompleted(string letter)
+    {
+      if(letter == "O")
+        {
+            OisComplete = true;
+        }
+        if (letter == "E")
+        {
+           EisComplete = true;
+        }
+        if (letter == "I")
+        {
+            IisComplete = true;
+        }
+        if (OisComplete && IisComplete && EisComplete)
+        {
+            isComplete = true;
+        }
+
+    }
 }

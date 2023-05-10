@@ -50,12 +50,16 @@ public class TeleportationGesture : MonoBehaviour
         }
         else
         {
+
+           
             if (Physics.Raycast(indexFingerTipPosition, indexFingerTipNormal, out hit, Mathf.Infinity, wallLayer))
             {
                 if (hitCallback != null)
                 {
                     if (pinching)
                     {
+                        GameObject hitObject = hit.collider.gameObject;
+                        Debug.Log(hitObject);
                         pinching = false;
                         lineRenderer.enabled = false;
                     }
@@ -130,9 +134,7 @@ public class TeleportationGesture : MonoBehaviour
                 lineRenderer.enabled = false;
                 return true;
             }
-
-
-            return false;
+              return false;
 
         }
 

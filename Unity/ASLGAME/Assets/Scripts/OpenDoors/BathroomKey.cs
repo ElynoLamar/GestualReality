@@ -54,4 +54,13 @@ public class BathroomKey : MonoBehaviour
         objectInteractable = true;
 
     }
+    void OnTriggerEnter(Collider other)
+    {
+        Debug.Log(other);
+        if (other.tag == "Hand")
+        {
+            gameObject.SetActive(false);
+            OpenDoor(); 
+        }
+    }
 }

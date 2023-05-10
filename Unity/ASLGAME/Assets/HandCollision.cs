@@ -19,7 +19,7 @@ public class HandCollision : MonoBehaviour
             if (!takeScreenshot)
             {
                 takeScreenshot = true;
-                InvokeRepeating("screenshot", 2f, 15f);
+                InvokeRepeating("screenshot", 2f, 7f);
             }
         }
     }

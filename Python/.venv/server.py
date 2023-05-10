@@ -5,6 +5,7 @@ import sys
 
 app = Flask(__name__)
 
+##default upload pasta
 UPLOAD_FOLDER = '../uploads'
 if not os.path.exists(UPLOAD_FOLDER):
     os.makedirs(UPLOAD_FOLDER)
@@ -13,19 +14,21 @@ if not os.path.exists(UPLOAD_FOLDER):
 sys.path.append(os.path.abspath(os.path.join(
     os.path.dirname(__file__), '..', 'ultralytics')))
 
-# Import the my_function from test.py module
-
-
+##Importar predict yolov8
 from yolov8.test import my_function
 
 @app.route('/', methods=['POST'])
 def upload_file():
+    ## receber em formdata propriedade image
     file = request.files['image']
     filename = file.filename
+    ##preparar caminhos 
     filename = os.path.basename(filename)
     filepath = os.path.abspath(os.path.join(
         os.path.dirname(__file__), UPLOAD_FOLDER, filename))
+    ##grvar file -> previsão precisa de ficheiro "fisico"
     file.save(filepath)
-    output = my_function(filepath)  # call the function directly
+    #previsao
+    output = my_function(filepath) 
     print(output)
     return output

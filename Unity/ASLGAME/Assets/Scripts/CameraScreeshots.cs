@@ -14,7 +14,11 @@ public class CameraScreeshots : MonoBehaviour
     public new Camera camera;
     public Camera mainCamera;
     public GameObject targetBox;
-
+    private bool a_completed = false;
+    private bool e_completed = false;
+    private bool i_completed = false;
+    private bool o_completed = false;
+    private bool u_completed = false;
     //
     public Camera orthoCamera;
 
@@ -91,9 +95,24 @@ public class CameraScreeshots : MonoBehaviour
         UnityWebRequest request = UnityWebRequest.Post(endpointUrl, form);
         yield return request.SendWebRequest();
         Debug.Log(request.downloadHandler.text);
+
         if (request.downloadHandler.text == targetLetter)
         {
-            targetBox.GetComponent<BedInteract>().setCompleted();
+            Debug.Log("ISTO MIGUEL");
+            Debug.Log(targetBox);
+            if(targetBox.name== "Toilet UI")
+            {
+                targetBox.GetComponent<ToiletInteract>().setCompleted(targetLetter);
+            }
+            else if (targetBox.name == "Bed UI")
+            {
+                targetBox.GetComponent<BedInteract>().setCompleted();
+            }
+            //else if (targetBox.name == "Table UI")
+            //{
+            //    targetBox.GetComponent<SofaInteractable>().setCompleted();
+            //}
+
         }
 
        /** string json = "{\"name\":\"John Smith\",\"age\":30,\"email\":\"john.smith@example.com\"}";
