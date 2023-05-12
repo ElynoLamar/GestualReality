@@ -27,7 +27,7 @@ public class CameraScreeshots : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-           takeScreenshot();
+            takeScreenshot();
         }
     }
 
@@ -35,7 +35,7 @@ public class CameraScreeshots : MonoBehaviour
     {
         string letter = targetLetter;
         string timestamp = System.DateTime.Now.ToString("yyyyMMddHHmmss");
-        string path = "dataset/screenshots/v5/" + letter + '/' + letter + '_' + timestamp + ".png";
+        string path = "dataset/screenshots/v6/" + letter + '/' + letter + '_' + timestamp + ".png";
         StartCoroutine(SaveScreenshot(path, () =>
         {
             string imagePath = path;
@@ -100,7 +100,7 @@ public class CameraScreeshots : MonoBehaviour
         {
             Debug.Log("ISTO MIGUEL");
             Debug.Log(targetBox);
-            if(targetBox.name== "Toilet UI")
+            if (targetBox.name == "Toilet UI")
             {
                 targetBox.GetComponent<ToiletInteract>().setCompleted(targetLetter);
             }
@@ -115,27 +115,27 @@ public class CameraScreeshots : MonoBehaviour
 
         }
 
-       /** string json = "{\"name\":\"John Smith\",\"age\":30,\"email\":\"john.smith@example.com\"}";
-        byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(json);
+        /** string json = "{\"name\":\"John Smith\",\"age\":30,\"email\":\"john.smith@example.com\"}";
+         byte[] bodyRaw = System.Text.Encoding.UTF8.GetBytes(json);
 
-        // create the UnityWebRequest object
-        UnityWebRequest request = UnityWebRequest.Post(url, "POST");
-        request.uploadHandler = new UploadHandlerRaw(bodyRaw);
-        request.downloadHandler = new DownloadHandlerBuffer();
-        request.SetRequestHeader("Content-Type", "application/json");
+         // create the UnityWebRequest object
+         UnityWebRequest request = UnityWebRequest.Post(url, "POST");
+         request.uploadHandler = new UploadHandlerRaw(bodyRaw);
+         request.downloadHandler = new DownloadHandlerBuffer();
+         request.SetRequestHeader("Content-Type", "application/json");
 
-        // send the request and wait for a response
-        yield return request.SendWebRequest();
+         // send the request and wait for a response
+         yield return request.SendWebRequest();
 
-        if (request.result != UnityWebRequest.Result.Success)
-        {
-            Debug.LogError(request.error);
-        }
-        else
-        {
-            Debug.Log("Request sent successfully!");
-            Debug.Log(request.downloadHandler.text);
-        }*/
+         if (request.result != UnityWebRequest.Result.Success)
+         {
+             Debug.LogError(request.error);
+         }
+         else
+         {
+             Debug.Log("Request sent successfully!");
+             Debug.Log(request.downloadHandler.text);
+         }*/
     }
 
 
