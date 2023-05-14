@@ -80,6 +80,8 @@ public class CameraScreeshots : MonoBehaviour
     IEnumerator PostRequest(string image)
     {
         Renderer renderer = cubeInteractBox.GetComponent<Renderer>();
+        renderer.material.color = new Color(255, 255, 0, 0.5f);
+
         WWWForm form = new WWWForm();
 
         // Read the image file as a byte array
@@ -91,7 +93,6 @@ public class CameraScreeshots : MonoBehaviour
         // Create a UnityWebRequest object with the form data and send it
         UnityWebRequest request = UnityWebRequest.Post(endpointUrl, form);
         yield return request.SendWebRequest();
-        renderer.material.color = new Color(255, 255, 0, 0.5f);
 
         if (request.downloadHandler.text == targetLetter)
         {

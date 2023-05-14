@@ -59,6 +59,8 @@ public class TeleportationGesture : MonoBehaviour
                     if (pinching)
                     {
                         GameObject hitObject = hit.collider.gameObject;
+                        Debug.Log("card");
+                        Debug.Log(hitObject);
                         ActivateCard(hitObject);
                         pinching = false;
                         lineRenderer.enabled = false;
@@ -81,6 +83,7 @@ public class TeleportationGesture : MonoBehaviour
                     if (pinching)
                     {
                         GameObject hitObject = hit.collider.gameObject;
+                        Debug.Log("wall");
                         Debug.Log(hitObject);
                         pinching = false;
                         lineRenderer.enabled = false;
@@ -104,6 +107,7 @@ public class TeleportationGesture : MonoBehaviour
                     if (pinching)
                     {
                         GameObject hitObject = hit.collider.gameObject;
+                        Debug.Log("cube");
                         Debug.Log(hitObject);
                         ActivateCube(hitObject);
                         pinching = false;
@@ -127,6 +131,10 @@ public class TeleportationGesture : MonoBehaviour
                 {
                     if (pinching)
                     {
+                        GameObject hitObject = hit.collider.gameObject;
+
+                        Debug.Log("~ground");
+                        Debug.Log(hitObject);
                         hitCallback(hit);
                     }
                 }
