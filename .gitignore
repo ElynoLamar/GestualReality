@@ -2,3 +2,5 @@ Python/.venv/Lib/
 Python/.venv/share/
 Python/ImageRecon/
 Python/prebuild-models.rar
+Python/labeling/
+Python/uploads/
