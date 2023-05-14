@@ -2,8 +2,8 @@ import cv2
 import numpy as np
 import os
 
-input_folder = "./train_images/"
-output_folder = "./train_labels/"
+input_folder = "./images/"
+output_folder = "./labels/"
 # get list of image files in "./images/" directory
 image_files = os.listdir(input_folder)
 
@@ -65,16 +65,3 @@ for file in image_files:
         with open(output_path, 'w') as f:
             f.write(
                 f"{classification} {x_center:.6f} {y_center:.6f} {bbox_width:.6f} {bbox_height:.6f}")
-
-        # # draw final bounding box
-        # x, y, w, h = bounding_box
-        # cv2.rectangle(result, (x, y), (x + w, y + h), (0, 0, 255), 2)
-
-        # # save resulting image
-        # result_path = os.path.join('./results', file)
-        # cv2.imwrite(result_path, result)
-
-        # show thresh and result
-        # cv2.imshow("bounding_box", result)
-        # cv2.waitKey(0)
-        # cv2.destroyAllWindows()

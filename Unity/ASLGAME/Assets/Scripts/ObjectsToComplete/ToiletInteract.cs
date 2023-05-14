@@ -50,47 +50,27 @@ public class ToiletInteract : MonoBehaviour
 
             objectIsVisible = false;
         }
-        // For the letter O
-        if (Input.GetKey(KeyCode.K) && objectIsVisible) // check if the "K" key is pressed AND the object is visible
-        {
-            interactiveCubeO.SetActive(false);
-            completeO.SetActive(true);
-            OisComplete = true;
-
-        }
-        // For the letter I
-        if (Input.GetKey(KeyCode.L) && objectIsVisible) // check if the "K" key is pressed AND the object is visible
-        {
-            interactiveCubeI.SetActive(false);
-            completeI.SetActive(true);
-            IisComplete = true;
-
-        }
-        // For the letter E
-        if (Input.GetKey(KeyCode.J) && objectIsVisible) // check if the "K" key is pressed AND the object is visible
-        {
-            interactiveCubeE.SetActive(false);
-            completeE.SetActive(true);
-            EisComplete = true;
-
-        }
-        if (OisComplete && IisComplete && EisComplete)
-        {
-            isComplete = true;
-        }
     }
     public void setCompleted(string letter)
     {
-      if(letter == "O")
+        Debug.Log(letter);
+        Debug.Log(""+OisComplete + " "+ EisComplete + " " + isComplete);
+        if (letter == "O")
         {
+            completeO.SetActive(true);
+            interactiveCubeO.SetActive(false);
             OisComplete = true;
         }
         if (letter == "E")
         {
-           EisComplete = true;
+            completeE.SetActive(true);
+            interactiveCubeE.SetActive(false);
+            EisComplete = true;
         }
         if (letter == "I")
         {
+            completeI.SetActive(true);
+            interactiveCubeI.SetActive(false);
             IisComplete = true;
         }
         if (OisComplete && IisComplete && EisComplete)

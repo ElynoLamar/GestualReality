@@ -25,20 +25,6 @@ public class HanddleCubeInteraction : MonoBehaviour
 
     }
 
-    private void Update()
-    {
-        if (objectInteractable)
-        {
-            if (letter == "E")
-            {
-                handSignActivate.activateLetter();
-                Invoke("OpenFirstDoor", 2f);
-
-            }
-            //manter dentro deste if, mas no final dos ifs nested
-            showHandPose();
-        }
-    }
 
     private void showHandPose()
     {
@@ -57,7 +43,22 @@ public class HanddleCubeInteraction : MonoBehaviour
     }
     public void grabCube()
     {
-        objectInteractable = true;
+        showHandPose();
 
+        if (letter == "E")
+        {
+            handSignActivate.activateLetter();
+            Invoke("OpenFirstDoor", 2f);
+
+        }
+
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "Hand")
+        {
+            grabCube();
+        }
     }
 }

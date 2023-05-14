@@ -14,8 +14,8 @@ TagManager:
   - Matched
   - LivingRoom
   - BathDoor
-  - TV
   - Exit
+  - TV
   layers:
   - Default
   - TransparentFX

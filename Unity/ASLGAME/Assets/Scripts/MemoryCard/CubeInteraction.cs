@@ -34,7 +34,19 @@ public class CubeInteraction : MonoBehaviour
                 LVdoorAnimation.SetBool("openDoor", true);
 
                 //
-                GameObject.FindWithTag("Exit").SetActive(true);
+                GameObject exitObject = GameObject.FindGameObjectWithTag("Exit");
+                Debug.Log(exitObject);
+                // Check if the GameObject was found
+                if (exitObject != null)
+                {
+                    Debug.Log("existe");
+                    // Find the child game object with the name "ExitUI"
+                    GameObject exitUI = exitObject.transform.Find("Exit UI").gameObject;
+                    Debug.Log(exitUI);
+                    Debug.Log("também existe");
+                    // Activate the child game object
+                    exitUI.SetActive(true);
+                }
                 //openDoor = true;
                 // Debug.Log(openDoor);
 
@@ -44,6 +56,41 @@ public class CubeInteraction : MonoBehaviour
         {
             gameManager.UnFlippedSelectedCards();
         }
+    }
+    public void SetCompleted()
+    {
+        gameManager.SetShowCube();
+        GameObject[] objectsWithTag = GameObject.FindGameObjectsWithTag("Matched");
+        Debug.Log(objectsWithTag.Length);
+        if (objectsWithTag.Length == 6)
+        {
+            LivingRoomUI.SetActive(false);
+            LVdoorAnimation.SetBool("openDoor", true);
+
+            //
+            GameObject exitObject = GameObject.FindGameObjectWithTag("Exit");
+            Debug.Log(exitObject);
+            // Check if the GameObject was found
+            if (exitObject != null)
+            {
+                Debug.Log("existe");
+                // Find the child game object with the name "ExitUI"
+                GameObject exitUI = exitObject.transform.Find("Exit UI").gameObject;
+                Debug.Log(exitUI);
+                Debug.Log("também existe");
+                // Activate the child game object
+                exitUI.SetActive(true);
+            }
+            //openDoor = true;
+            // Debug.Log(openDoor);
+
+        }
+        gameObject.SetActive(false);
+
+    }
+    public void SetIncompleted()
+    {
+        gameManager.UnFlippedSelectedCards();
     }
 }
 

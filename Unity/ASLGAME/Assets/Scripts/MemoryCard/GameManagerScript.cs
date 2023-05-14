@@ -122,4 +122,36 @@ public class GameManagerScript : MonoBehaviour
         CubeShow = false;
         selectedCards.Clear();
     }
+
+    public void setCompleted(string Letter)
+    {
+        if(Letter == "E")
+        {
+            CubeE.GetComponent<CubeInteraction>().SetCompleted();
+        }
+        if (Letter == "I")
+        {
+            CubeI.GetComponent<CubeInteraction>().SetCompleted();
+        }
+        if (Letter == "U")
+        {
+            CubeU.GetComponent<CubeInteraction>().SetCompleted();
+        }
+    }
+
+    public void SetIncompleted(string Letter)
+    {
+        if (Letter == "E")
+        {
+            CubeE.GetComponent<CubeInteraction>().SetIncompleted();
+        }
+        if (Letter == "I")
+        {
+            CubeI.GetComponent<CubeInteraction>().SetIncompleted();
+        }
+        if (Letter == "U")
+        {
+            CubeU.GetComponent<CubeInteraction>().SetIncompleted();
+        }
+    }
 }

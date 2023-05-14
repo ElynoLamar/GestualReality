@@ -29,8 +29,6 @@ public class HandCollision : MonoBehaviour
     {
         if (other.tag == "Hand")
         {
-            Renderer renderer = GetComponent<Renderer>();
-            renderer.material.color = new Color(0, 1, 0, 0.5f);
             if (takeScreenshot)
             {
                 CancelInvoke("screenshot");

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SofaInteractable : MonoBehaviour//, MakeInteractable
+public class TableInteractable : MonoBehaviour//, MakeInteractable
 {
 
 
@@ -50,28 +50,36 @@ public class SofaInteractable : MonoBehaviour//, MakeInteractable
             
             objectIsVisible = false;
         }
-        // For the letter A
-        if (Input.GetKey(KeyCode.K) && objectIsVisible) // check if the "K" key is pressed AND the object is visible
+
+        //if (EisComplete && AisComplete)
+        //{
+        //    isComplete = true;
+        //    doorAnimation.SetBool("openDoor", false);
+
+        //}
+    }
+
+    public void setCompleted(string letter)
+    {
+        Debug.Log("letter");
+        Debug.Log(letter);
+        if (letter == "A")
         {
-            interactiveCubeA.SetActive(false);
             completeA.SetActive(true);
-            EisComplete = true;
-
-        }
-        // For the letter E
-        if (Input.GetKey(KeyCode.L) && objectIsVisible) // check if the "K" key is pressed AND the object is visible
-        {
-            interactiveCubeE.SetActive(false);
-            completeE.SetActive(true);
+            interactiveCubeA.SetActive(false);
             AisComplete = true;
-
         }
-        if (EisComplete && AisComplete)
+        if (letter == "E")
+        {
+            completeE.SetActive(true);
+            interactiveCubeE.SetActive(false);
+            EisComplete = true;
+        }
+        if (AisComplete && EisComplete)
         {
             isComplete = true;
-            doorAnimation.SetBool("openDoor", false);
-
         }
+
     }
 
 }

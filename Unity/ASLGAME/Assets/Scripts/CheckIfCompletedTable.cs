@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CheckIfCompletedSofa : MonoBehaviour
+public class CheckIfCompletedTable : MonoBehaviour
 {
     //public GameObject childObject;
     //public BedInteract childScript;
@@ -21,7 +21,7 @@ public class CheckIfCompletedSofa : MonoBehaviour
     //        objectReplace.Activate();
     //    }
     //}
-    private SofaInteractable childScript;
+    private TableInteractable childScript;
 
     private void Update()
     {
@@ -29,9 +29,8 @@ public class CheckIfCompletedSofa : MonoBehaviour
         if (childScript == null)
         {
             // Get the child script component
-            childScript = GetComponentInChildren<SofaInteractable>();
+            childScript = GetComponentInChildren<TableInteractable>();
         }
-
         // Check if the child script component has the boolean variable set to true
         if (childScript != null && childScript.isComplete == true)
         {

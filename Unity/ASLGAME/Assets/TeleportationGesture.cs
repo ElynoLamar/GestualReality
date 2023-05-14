@@ -51,31 +51,7 @@ public class TeleportationGesture : MonoBehaviour
         else
         {
 
-           
-            if (Physics.Raycast(indexFingerTipPosition, indexFingerTipNormal, out hit, Mathf.Infinity, wallLayer))
-            {
-                if (hitCallback != null)
-                {
-                    if (pinching)
-                    {
-                        GameObject hitObject = hit.collider.gameObject;
-                        Debug.Log(hitObject);
-                        pinching = false;
-                        lineRenderer.enabled = false;
-                    }
-                }
-                else
-                {
-                    pinching = false;
-                    lineRenderer.enabled = false;
-                }
-
-                // Do something with the hit object
-
-                return false;
-
-            }
-            else if (Physics.Raycast(indexFingerTipPosition, indexFingerTipNormal, out hit, Mathf.Infinity, cardLayer))
+            if (Physics.Raycast(indexFingerTipPosition, indexFingerTipNormal, out hit, Mathf.Infinity, cardLayer))
             {
 
                 if (hitCallback != null)
@@ -98,6 +74,29 @@ public class TeleportationGesture : MonoBehaviour
 
                 return false;
             }
+            else if (Physics.Raycast(indexFingerTipPosition, indexFingerTipNormal, out hit, Mathf.Infinity, wallLayer))
+            {
+                if (hitCallback != null)
+                {
+                    if (pinching)
+                    {
+                        GameObject hitObject = hit.collider.gameObject;
+                        Debug.Log(hitObject);
+                        pinching = false;
+                        lineRenderer.enabled = false;
+                    }
+                }
+                else
+                {
+                    pinching = false;
+                    lineRenderer.enabled = false;
+                }
+
+                // Do something with the hit object
+
+                return false;
+
+            }
             else if (Physics.Raycast(indexFingerTipPosition, indexFingerTipNormal, out hit, Mathf.Infinity, cubeLayer))
             {
                 if (hitCallback != null)
@@ -105,6 +104,7 @@ public class TeleportationGesture : MonoBehaviour
                     if (pinching)
                     {
                         GameObject hitObject = hit.collider.gameObject;
+                        Debug.Log(hitObject);
                         ActivateCube(hitObject);
                         pinching = false;
                         lineRenderer.enabled = false;
@@ -134,7 +134,7 @@ public class TeleportationGesture : MonoBehaviour
                 lineRenderer.enabled = false;
                 return true;
             }
-              return false;
+            return false;
 
         }
 

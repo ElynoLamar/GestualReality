@@ -14,11 +14,7 @@ public class CameraScreeshots : MonoBehaviour
     public new Camera camera;
     public Camera mainCamera;
     public GameObject targetBox;
-    private bool a_completed = false;
-    private bool e_completed = false;
-    private bool i_completed = false;
-    private bool o_completed = false;
-    private bool u_completed = false;
+    public GameObject cubeInteractBox;
     //
     public Camera orthoCamera;
 
@@ -35,7 +31,7 @@ public class CameraScreeshots : MonoBehaviour
     {
         string letter = targetLetter;
         string timestamp = System.DateTime.Now.ToString("yyyyMMddHHmmss");
-        string path = "dataset/screenshots/v6/" + letter + '/' + letter + '_' + timestamp + ".png";
+        string path = "dataset/screenshots/v7/" + letter + '/' + letter + '_' + timestamp + ".png";
         StartCoroutine(SaveScreenshot(path, () =>
         {
             string imagePath = path;
@@ -83,6 +79,7 @@ public class CameraScreeshots : MonoBehaviour
     }
     IEnumerator PostRequest(string image)
     {
+        Renderer renderer = cubeInteractBox.GetComponent<Renderer>();
         WWWForm form = new WWWForm();
 
         // Read the image file as a byte array
@@ -94,12 +91,11 @@ public class CameraScreeshots : MonoBehaviour
         // Create a UnityWebRequest object with the form data and send it
         UnityWebRequest request = UnityWebRequest.Post(endpointUrl, form);
         yield return request.SendWebRequest();
-        Debug.Log(request.downloadHandler.text);
+        renderer.material.color = new Color(255, 255, 0, 0.5f);
 
         if (request.downloadHandler.text == targetLetter)
         {
-            Debug.Log("ISTO MIGUEL");
-            Debug.Log(targetBox);
+            renderer.material.color = new Color(0, 255, 0, 0.5f);
             if (targetBox.name == "Toilet UI")
             {
                 targetBox.GetComponent<ToiletInteract>().setCompleted(targetLetter);
@@ -108,11 +104,23 @@ public class CameraScreeshots : MonoBehaviour
             {
                 targetBox.GetComponent<BedInteract>().setCompleted();
             }
-            //else if (targetBox.name == "Table UI")
-            //{
-            //    targetBox.GetComponent<SofaInteractable>().setCompleted();
-            //}
+            else if (targetBox.name == "Table UI")
+            {
+                targetBox.GetComponent<TableInteractable>().setCompleted(targetLetter);
+            }
+            else if (targetBox.name == "TV UI")
+            {
+                targetBox.GetComponentInChildren<GameManagerScript>().setCompleted(targetLetter);
+            }
+        }
+        else
+        {
+            renderer.material.color = new Color(255, 0, 0, 0.5f);
 
+            if (targetBox.name == "TV UI")
+            {
+                targetBox.GetComponentInChildren<GameManagerScript>().SetIncompleted(targetLetter);
+            }
         }
 
         /** string json = "{\"name\":\"John Smith\",\"age\":30,\"email\":\"john.smith@example.com\"}";
