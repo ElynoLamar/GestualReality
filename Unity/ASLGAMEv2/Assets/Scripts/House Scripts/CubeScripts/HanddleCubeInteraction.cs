@@ -10,6 +10,7 @@ public class HanddleCubeInteraction : MonoBehaviour
 
     private bool objectInteractable = false;
     private Animator doorAnimation;
+    private Animator LivingRoomdoorAnimation;
     public string letter = "E";
     public Letterbool handSignActivate;
     public GameObject handObject;
@@ -20,6 +21,8 @@ public class HanddleCubeInteraction : MonoBehaviour
         //objectToMakeVisible.SetActive(false);
         doorAnimation = GameObject.FindWithTag("BedroomDoor").GetComponent<Animator>();
         doorAnimation.SetBool("DoorOpen", false);
+        LivingRoomdoorAnimation = GameObject.FindWithTag("LivingRoom").GetComponent<Animator>();
+        LivingRoomdoorAnimation.SetBool("DoorOpen", false);
         objectInteractable = false;
 
 
@@ -41,14 +44,26 @@ public class HanddleCubeInteraction : MonoBehaviour
         doorAnimation.SetBool("DoorOpen", true);
 
     }
+    private void OpenLastDoor()
+    {
+        LivingRoomdoorAnimation.SetBool("openDoor", true);
+
+    }
     public void grabCube()
     {
+        Debug.Log("grabcybe");
+        Debug.Log(letter);
         showHandPose();
+        handSignActivate.activateLetter();
 
         if (letter == "E")
         {
-            handSignActivate.activateLetter();
             Invoke("OpenFirstDoor", 2f);
+
+        }
+        if (letter == "U")
+        {
+            Invoke("OpenLastDoor", 2f);
 
         }
 

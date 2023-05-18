@@ -39,11 +39,9 @@ public class CubeInteraction : MonoBehaviour
                 // Check if the GameObject was found
                 if (exitObject != null)
                 {
-                    Debug.Log("existe");
                     // Find the child game object with the name "ExitUI"
                     GameObject exitUI = exitObject.transform.Find("Exit UI").gameObject;
                     Debug.Log(exitUI);
-                    Debug.Log("também existe");
                     // Activate the child game object
                     exitUI.SetActive(true);
                 }
@@ -61,7 +59,6 @@ public class CubeInteraction : MonoBehaviour
     {
         gameManager.SetShowCube();
         GameObject[] objectsWithTag = GameObject.FindGameObjectsWithTag("Matched");
-        Debug.Log(objectsWithTag.Length);
         if (objectsWithTag.Length == 6)
         {
             LivingRoomUI.SetActive(false);
@@ -69,15 +66,11 @@ public class CubeInteraction : MonoBehaviour
 
             //
             GameObject exitObject = GameObject.FindGameObjectWithTag("Exit");
-            Debug.Log(exitObject);
             // Check if the GameObject was found
             if (exitObject != null)
             {
-                Debug.Log("existe");
                 // Find the child game object with the name "ExitUI"
                 GameObject exitUI = exitObject.transform.Find("Exit UI").gameObject;
-                Debug.Log(exitUI);
-                Debug.Log("também existe");
                 // Activate the child game object
                 exitUI.SetActive(true);
             }

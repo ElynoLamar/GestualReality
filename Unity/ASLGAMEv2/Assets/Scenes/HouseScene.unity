@@ -4936,8 +4936,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 199716130}
-  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -4.15, y: 1.931, z: -0.88}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: -3.76, y: 0.78, z: -1.21}
   m_LocalScale: {x: 0.9, y: 0.9, z: 0.9}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4945,7 +4945,7 @@ Transform:
   - {fileID: 846552525}
   m_Father: {fileID: 0}
   m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1 &202112482
 GameObject:
   m_ObjectHideFlags: 0
@@ -5236,7 +5236,7 @@ GameObject:
   - component: {fileID: 224916846}
   m_Layer: 0
   m_Name: Exit
-  m_TagString: Untagged
+  m_TagString: Exit
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5270,7 +5270,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOver: 0
-  endText: {fileID: 0}
+  endText: {fileID: 2070936642}
 --- !u!1 &226962368
 GameObject:
   m_ObjectHideFlags: 0
@@ -6487,7 +6487,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 18
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &253964146
 Transform:
   m_ObjectHideFlags: 0
@@ -7981,7 +7981,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetLetter: U
-  endpointUrl: 192.168.0.69
+  endpointUrl: localhost:5000/
   camera: {fileID: 310053465}
   mainCamera: {fileID: 92361027}
   targetBox: {fileID: 610730363}
@@ -8024,13 +8024,13 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 0.55
+    width: 1
     height: 1
   near clip plane: 0.53
-  far clip plane: 0.79
+  far clip plane: 0.94
   field of view: 26.025524
   orthographic: 1
-  orthographic size: 0.1263955
+  orthographic size: 0.1377025
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -10131,7 +10131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetLetter: O
-  endpointUrl: 192.168.0.69
+  endpointUrl: localhost:5000/
   camera: {fileID: 423301738}
   mainCamera: {fileID: 92361027}
   targetBox: {fileID: 610730363}
@@ -10174,13 +10174,13 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 0.55
+    width: 1
     height: 1
   near clip plane: 0.53
-  far clip plane: 0.79
+  far clip plane: 0.94
   field of view: 26.025524
   orthographic: 1
-  orthographic size: 0.1263955
+  orthographic size: 0.1377025
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -10332,7 +10332,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &424507793
 Transform:
   m_ObjectHideFlags: 0
@@ -15123,11 +15123,11 @@ GameObject:
   - component: {fileID: 610730366}
   m_Layer: 0
   m_Name: Exit UI
-  m_TagString: Exit
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &610730365
 Transform:
   m_ObjectHideFlags: 0
@@ -26604,7 +26604,7 @@ PrefabInstance:
       objectReference: {fileID: 92361027}
     - target: {fileID: 7808941837191713057, guid: 27e51f284a9f945cfabccbb98424acf3, type: 3}
       propertyPath: endpointUrl
-      value: 192.168.0.69
+      value: localhost:5000/
       objectReference: {fileID: 0}
     - target: {fileID: 7808941837191713057, guid: 27e51f284a9f945cfabccbb98424acf3, type: 3}
       propertyPath: orthoCamera
@@ -39940,7 +39940,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetLetter: O
-  endpointUrl: 192.168.0.69
+  endpointUrl: localhost:5000/
   camera: {fileID: 1505000851}
   mainCamera: {fileID: 92361027}
   targetBox: {fileID: 1650529861}
@@ -42099,7 +42099,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetLetter: I
-  endpointUrl: 192.168.0.69
+  endpointUrl: localhost:5000/
   camera: {fileID: 1587186869}
   mainCamera: {fileID: 92361027}
   targetBox: {fileID: 610730363}
@@ -42142,13 +42142,13 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 0.55
+    width: 1
     height: 1
   near clip plane: 0.53
-  far clip plane: 0.79
+  far clip plane: 0.94
   field of view: 26.025524
   orthographic: 1
-  orthographic size: 0.1263955
+  orthographic size: 0.1377025
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -48690,7 +48690,7 @@ GameObject:
   - component: {fileID: 1879970924}
   - component: {fileID: 1879970923}
   m_Layer: 0
-  m_Name: CameraScreenshots
+  m_Name: CameraScreenshotsBedE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48724,7 +48724,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetLetter: E
-  endpointUrl: 192.168.0.69
+  endpointUrl: localhost:5000/
   camera: {fileID: 92361027}
   mainCamera: {fileID: 92361027}
   targetBox: {fileID: 149948611}
@@ -48771,8 +48771,8 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 0.94
-  field of view: 26.025524
-  orthographic: 0
+  field of view: 30
+  orthographic: 1
   orthographic size: 0.19
   m_Depth: 0
   m_CullingMask:
@@ -52708,7 +52708,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetLetter: E
-  endpointUrl: 192.168.0.69
+  endpointUrl: localhost:5000/
   camera: {fileID: 2031736731}
   mainCamera: {fileID: 92361027}
   targetBox: {fileID: 610730363}
@@ -52751,13 +52751,13 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 0.55
+    width: 1
     height: 1
   near clip plane: 0.53
-  far clip plane: 0.79
+  far clip plane: 0.94
   field of view: 26.025524
   orthographic: 1
-  orthographic size: 0.1263955
+  orthographic size: 0.1377025
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -55195,7 +55195,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetLetter: A
-  endpointUrl: 192.168.0.69
+  endpointUrl: localhost:5000/
   camera: {fileID: 2135968819}
   mainCamera: {fileID: 92361027}
   targetBox: {fileID: 610730363}
@@ -55238,13 +55238,13 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 0.55
+    width: 1
     height: 1
   near clip plane: 0.53
-  far clip plane: 0.79
+  far clip plane: 0.94
   field of view: 26.025524
   orthographic: 1
-  orthographic size: 0.1263955
+  orthographic size: 0.1377025
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -55864,7 +55864,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3155567734572749218}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -0, y: 0, z: 2.75}
+  m_LocalPosition: {x: 0.1, y: 0, z: 2.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -61976,11 +61976,11 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.45
   far clip plane: 0.94
   field of view: 26.025524
   orthographic: 1
-  orthographic size: 0.19
+  orthographic size: 0.1377025
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -62076,13 +62076,13 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1
+    width: 0.59
     height: 1
-  near clip plane: 0.3
-  far clip plane: 0.94
+  near clip plane: 0.53
+  far clip plane: 0.77
   field of view: 26.025524
   orthographic: 1
-  orthographic size: 0.19
+  orthographic size: 0.1377025
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -62127,13 +62127,13 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1
+    width: 0.4
     height: 1
-  near clip plane: 0.3
-  far clip plane: 0.94
+  near clip plane: 0.51
+  far clip plane: 0.79
   field of view: 26.025524
   orthographic: 1
-  orthographic size: 0.19
+  orthographic size: 0.1377025
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -62180,11 +62180,11 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
+  near clip plane: 0.44
   far clip plane: 0.94
   field of view: 26.025524
   orthographic: 1
-  orthographic size: 0.19
+  orthographic size: 0.1377025
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -62229,13 +62229,13 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1
+    width: 0.56
     height: 1
-  near clip plane: 0.3
-  far clip plane: 0.94
+  near clip plane: 0.52
+  far clip plane: 0.84
   field of view: 26.025524
   orthographic: 1
-  orthographic size: 0.19
+  orthographic size: 0.1377025
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -66642,7 +66642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetLetter: U
-  endpointUrl: 192.168.0.69
+  endpointUrl: localhost:5000/
   camera: {fileID: 5232299872771269851}
   mainCamera: {fileID: 92361027}
   targetBox: {fileID: 424507792}
@@ -66661,7 +66661,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetLetter: E
-  endpointUrl: 192.168.0.69
+  endpointUrl: localhost:5000/
   camera: {fileID: 5232299872592191920}
   mainCamera: {fileID: 92361027}
   targetBox: {fileID: 424507792}
@@ -66680,7 +66680,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetLetter: E
-  endpointUrl: 192.168.0.69
+  endpointUrl: localhost:5000/
   camera: {fileID: 5232299872602027646}
   mainCamera: {fileID: 92361027}
   targetBox: {fileID: 1360366890}
@@ -66699,7 +66699,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetLetter: I
-  endpointUrl: 192.168.0.69
+  endpointUrl: localhost:5000/
   camera: {fileID: 5232299872327080100}
   mainCamera: {fileID: 92361027}
   targetBox: {fileID: 424507792}
@@ -66718,7 +66718,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetLetter: O
-  endpointUrl: 192.168.0.69
+  endpointUrl: localhost:5000/
   camera: {fileID: 5232299874081080026}
   mainCamera: {fileID: 92361027}
   targetBox: {fileID: 1650529861}
@@ -66737,7 +66737,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetLetter: A
-  endpointUrl: 192.168.0.69
+  endpointUrl: localhost:5000/
   camera: {fileID: 5232299873361651845}
   mainCamera: {fileID: 92361027}
   targetBox: {fileID: 1360366890}
@@ -66756,7 +66756,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetLetter: I
-  endpointUrl: 192.168.0.69
+  endpointUrl: localhost:5000/
   camera: {fileID: 92361027}
   mainCamera: {fileID: 92361027}
   targetBox: {fileID: 1650529861}
@@ -66775,7 +66775,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetLetter: E
-  endpointUrl: 192.168.0.69
+  endpointUrl: localhost:5000/
   camera: {fileID: 92361027}
   mainCamera: {fileID: 92361027}
   targetBox: {fileID: 1650529861}

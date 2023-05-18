@@ -31,7 +31,7 @@ public class CameraScreeshots : MonoBehaviour
     {
         string letter = targetLetter;
         string timestamp = System.DateTime.Now.ToString("yyyyMMddHHmmss");
-        string path = "dataset/screenshots/v7/" + letter + '/' + letter + '_' + timestamp + ".png";
+        string path = "dataset/screenshots/v8/" + letter + '/' + letter + '_' + timestamp + ".png";
         StartCoroutine(SaveScreenshot(path, () =>
         {
             string imagePath = path;

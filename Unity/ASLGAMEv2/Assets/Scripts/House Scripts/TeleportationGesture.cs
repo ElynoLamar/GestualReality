@@ -2,7 +2,7 @@ using UnityEngine;
 using OculusSampleFramework;
 using System;
 using System.Collections;
-using UnityEditor.PackageManager;
+//using UnityEditor.PackageManager;
 // hand = GetComponentInChildren<OVRHand>();
 public class TeleportationGesture : MonoBehaviour
 {

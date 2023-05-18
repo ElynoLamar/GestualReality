@@ -53,8 +53,6 @@ public class ToiletInteract : MonoBehaviour
     }
     public void setCompleted(string letter)
     {
-        Debug.Log(letter);
-        Debug.Log(""+OisComplete + " "+ EisComplete + " " + isComplete);
         if (letter == "O")
         {
             completeO.SetActive(true);
